@@ -25,8 +25,8 @@ const init = {
 
 export const Projects = () => {
   const c = useTranslation();
-  const { project, widget, testTask } = useMemo(() => {
-    const data = c.t.projects.reduce((acc, i) => {
+  const { project, widget } = useMemo(() => {
+    const data = c.t[PAGES.FOURTH].reduce((acc, i) => {
       const type = i.type;
       const currentData = acc[type];
       const nextData = [...currentData, i];
@@ -34,36 +34,16 @@ export const Projects = () => {
       return newAcc;
     }, init);
     return data;
-  }, [c.t.projects]);
+  }, [c.t[PAGES.FOURTH]]);
 
   return (
-    <div id={PAGES.PROJECTS} className={s.container}>
+    <div id={PAGES.FOURTH} className={s.container}>
       <div className={s.data}>
         <div
           className={s.data__title}
-        >{`${c.t.pageTitle.projects} и ${c.t.pageTitle.widgets}`}</div>
+        >{`${c.t.pageTitle[PAGES.FOURTH]} и ${c.t.pageTitle[PAGES.FOURTH]}`}</div>
         <div className={s.data__items}>
           {[...project, ...widget].map((i, index) => (
-            <ProjectItem
-              index={index}
-              key={`${i.title}_${index}`}
-              title={i.title}
-              type={i.type}
-              description={i.description}
-              github={i.github}
-              deploy={i.deploy}
-              stack={i.stack}
-            />
-          ))}
-        </div>
-      </div>
-      <div className={s.data}>
-        <div className={s.data__title}>{c.t.pageTitle.testTasks}</div>
-        <div className={s.data__disclaimer}>
-          {c.t.common.page.projects.testTasksDisclaimer}
-        </div>
-        <div className={s.data__items}>
-          {testTask.map((i, index) => (
             <ProjectItem
               index={index}
               key={`${i.title}_${index}`}

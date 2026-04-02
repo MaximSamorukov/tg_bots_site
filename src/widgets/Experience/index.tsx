@@ -8,15 +8,15 @@ export const Experience = () => {
   const c = useTranslation();
   return (
     <motion.div
-      id={PAGES.EXPERIENCE}
+      id={PAGES.SECOND}
       className={s.container}
       initial={{ filter: "blur(10px)" }}
       whileInView={{ filter: "none" }}
       transition={{ duration: 2 }}
     >
       <div className={s.data}>
-        <div className={s.data__title}>{c.t.pageTitle.experience}</div>
-        {c.t.experience.map((i) => (
+        <div className={s.data__title}>{c.t.pageTitle[PAGES.SECOND]}</div>
+        {c.t[PAGES.SECOND].map((i) => (
           <ExperienceItem
             key={i.company}
             stack={i.stack}

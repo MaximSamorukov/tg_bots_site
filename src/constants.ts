@@ -1,63 +1,61 @@
 export const PAGES = {
-  ABOUT: "about",
-  EXPERIENCE: "experience",
-  EDUCATION: "education",
-  COURSES: "courses",
-  PROJECTS: "projects",
-  CONTACTS: "contacts",
+  FIRST: "main",
+  SECOND: "benefits",
+  THIRD: "devsteps",
+  FOURTH: "bots",
+  FIFTH: "contacts",
 } as const;
 
 export const MENU = [
   {
-    name: PAGES.ABOUT,
-    slug: PAGES.ABOUT,
+    name: PAGES.FIRST,
+    slug: PAGES.FIRST,
   },
   {
-    name: PAGES.EXPERIENCE,
-    slug: PAGES.EXPERIENCE,
+    name: PAGES.SECOND,
+    slug: PAGES.SECOND,
   },
   {
-    name: PAGES.EDUCATION,
-    slug: PAGES.EDUCATION,
+    name: PAGES.THIRD,
+    slug: PAGES.THIRD,
   },
   {
-    name: PAGES.PROJECTS,
-    slug: PAGES.PROJECTS,
+    name: PAGES.FOURTH,
+    slug: PAGES.FOURTH,
   },
   {
-    name: PAGES.CONTACTS,
-    slug: PAGES.CONTACTS,
+    name: PAGES.FIFTH,
+    slug: PAGES.FIFTH,
   },
 ];
 
-export const EXPERIENCE = {
-  company: "company",
-  active: "active",
-  title: "title",
-  start: "start",
-  end: "end",
-  description: "description",
-};
-
-export const COURSES = {
-  valid: "valid",
-  name: "name",
-  school: "school",
-  type: "type",
-  description: "description",
-};
-
-export const EDUCATION = {
-  name: "name",
-  speciality: "speciality",
-  degree: "degree",
-};
-
-export const PROJECTS = {
-  description: "description",
-  stack: "stack",
-  github: "github",
-  deploy: "deploy",
+export const PAGES_CONFIG = {
+  [PAGES.FIRST]: {
+    company: "company",
+    active: "active",
+    title: "title",
+    start: "start",
+    end: "end",
+    description: "description",
+  },
+  [PAGES.SECOND]: {
+    valid: "valid",
+    name: "name",
+    school: "school",
+    type: "type",
+    description: "description",
+  },
+  [PAGES.THIRD]: {
+    name: "name",
+    speciality: "speciality",
+    degree: "degree",
+  },
+  [PAGES.FOURTH]: {
+    description: "description",
+    stack: "stack",
+    github: "github",
+    deploy: "deploy",
+  },
 };
 
 export const CHECK_IP_URL = "https://ipapi.co/json/";

@@ -3,7 +3,7 @@ import { PAGES } from "@/constants";
 
 export const Courses = () => {
   return (
-    <div id={PAGES.COURSES} className={s.container}>
+    <div id={PAGES.THIRD} className={s.container}>
       courses
     </div>
   );

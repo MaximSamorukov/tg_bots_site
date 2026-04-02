@@ -7,7 +7,7 @@ import { PAGES } from "@/constants";
 export const Contacts = () => {
   const c = useTranslation();
   return (
-    <div id={PAGES.CONTACTS} className={s.container}>
+    <div id={PAGES.FIFTH} className={s.container}>
       <motion.div
         className={s.data}
         initial={{ filter: "blur(10px)" }}

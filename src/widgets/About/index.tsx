@@ -14,7 +14,7 @@ export const About = () => {
   const less980px = useMediaQuery("(max-width: 980px)");
   if (less980px) {
     return (
-      <div id={PAGES.ABOUT} className={s.container}>
+      <div id={PAGES.FIRST} className={s.container}>
         <motion.div
           initial={{ filter: "blur(10px)" }}
           animate={{ filter: "none" }}
@@ -22,25 +22,31 @@ export const About = () => {
           className={s.data}
         >
           <div className={s.data__brief}>
-            <div className={s.data__title}>{c.t.about.brief.name}</div>
+            <div className={s.data__title}>{c.t[PAGES.FIRST].brief.name}</div>
             <div className={s.data__occupation}>
-              {c.t.about.brief.occupation}
+              {c.t[PAGES.FIRST].brief.occupation}
             </div>
-            <div className={s.data__moto}>{c.t.about.brief.moto}</div>
+            <div className={s.data__moto}>{c.t[PAGES.FIRST].brief.moto}</div>
           </div>
           <div className={s.data__summary}>
             <span
-              dangerouslySetInnerHTML={{ __html: c.t.about.summary.first }}
+              dangerouslySetInnerHTML={{
+                __html: c.t[PAGES.FIRST].summary.first,
+              }}
             />
             <br />
             <br />
             <span
-              dangerouslySetInnerHTML={{ __html: c.t.about.summary.second }}
+              dangerouslySetInnerHTML={{
+                __html: c.t[PAGES.FIRST].summary.second,
+              }}
             />
             <br />
             <br />
             <span
-              dangerouslySetInnerHTML={{ __html: c.t.about.summary.third }}
+              dangerouslySetInnerHTML={{
+                __html: c.t[PAGES.FIRST].summary.third,
+              }}
             />
           </div>
           <div className={s.data__brief}>
@@ -83,7 +89,7 @@ export const About = () => {
     );
   }
   return (
-    <div id={PAGES.ABOUT} className={s.container}>
+    <div id={PAGES.FIRST} className={s.container}>
       <motion.div
         initial={{ filter: "blur(10px)" }}
         whileInView={{ filter: "none" }}
@@ -91,9 +97,11 @@ export const About = () => {
         className={s.data}
       >
         <div className={s.data__brief}>
-          <div className={s.data__title}>{c.t.about.brief.name}</div>
-          <div className={s.data__occupation}>{c.t.about.brief.occupation}</div>
-          <div className={s.data__moto}>{c.t.about.brief.moto}</div>
+          <div className={s.data__title}>{c.t[PAGES.FIRST].brief.name}</div>
+          <div className={s.data__occupation}>
+            {c.t[PAGES.FIRST].brief.occupation}
+          </div>
+          <div className={s.data__moto}>{c.t[PAGES.FIRST].brief.moto}</div>
           <div className={s.data__socials}>
             <a
               href={c.t.contacts.github}
@@ -129,15 +137,21 @@ export const About = () => {
           <DownloadResumeBtn />
         </div>
         <div className={s.data__summary}>
-          <span dangerouslySetInnerHTML={{ __html: c.t.about.summary.first }} />
-          <br />
-          <br />
           <span
-            dangerouslySetInnerHTML={{ __html: c.t.about.summary.second }}
+            dangerouslySetInnerHTML={{ __html: c.t[PAGES.FIRST].summary.first }}
           />
           <br />
           <br />
-          <span dangerouslySetInnerHTML={{ __html: c.t.about.summary.third }} />
+          <span
+            dangerouslySetInnerHTML={{
+              __html: c.t[PAGES.FIRST].summary.second,
+            }}
+          />
+          <br />
+          <br />
+          <span
+            dangerouslySetInnerHTML={{ __html: c.t[PAGES.FIRST].summary.third }}
+          />
         </div>
       </motion.div>
     </div>

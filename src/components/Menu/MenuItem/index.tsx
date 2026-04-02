@@ -17,11 +17,11 @@ type MenuItemProps = {
   onSelect: (arg: string) => void;
 };
 const icon: Record<string, React.ReactElement> = {
-  [PAGES.ABOUT]: <AboutIcon />,
-  [PAGES.EXPERIENCE]: <ExperienceIcon />,
-  [PAGES.EDUCATION]: <EducationIcon />,
-  [PAGES.PROJECTS]: <ProjectsIcon />,
-  [PAGES.CONTACTS]: <ContactsIcon />,
+  [PAGES.FIRST]: <AboutIcon />,
+  [PAGES.SECOND]: <ExperienceIcon />,
+  [PAGES.THIRD]: <EducationIcon />,
+  [PAGES.FOURTH]: <ProjectsIcon />,
+  [PAGES.FIFTH]: <ContactsIcon />,
 };
 export const MenuItem: React.FC<MenuItemProps> = ({
   active,

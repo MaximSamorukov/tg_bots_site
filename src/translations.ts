@@ -1,24 +1,22 @@
+import { PAGES } from "./constants";
+
 export const t = {
   en: {
     pageTitle: {
-      about: "About me",
-      experience: "Experience",
-      education: "High education",
-      courses: "Courses",
-      projects: "Projects",
-      widgets: "Widgets",
-      testTasks: "Test tasks",
-      contacts: "Contacts",
+      [PAGES.FIRST]: "About me",
+      [PAGES.SECOND]: "Benefits",
+      [PAGES.THIRD]: "Development steps",
+      [PAGES.FOURTH]: "Bot examples",
+      [PAGES.FIFTH]: "Contacts",
     },
     menu: {
-      about: "About me",
-      experience: "Experience",
-      education: "Education",
-      courses: "Courses",
-      projects: "Projects",
-      contacts: "Contacts",
+      [PAGES.FIRST]: "About me",
+      [PAGES.SECOND]: "Benefits",
+      [PAGES.THIRD]: "Steps",
+      [PAGES.FOURTH]: "Exapmples",
+      [PAGES.FIFTH]: "Contacts",
     },
-    about: {
+    [PAGES.FIRST]: {
       brief: {
         name: "Maksim Samorukov",
         occupation: "frontend developer",
@@ -33,99 +31,7 @@ export const t = {
           "The combination of a PhD in materials science, an engineering background, and web development experience allows me to thoroughly understand the subject domain for <span class='accent'>effective problem-solving</span>.",
       },
     },
-    courses: [
-      {
-        valid: true,
-        name: "Frontend web development",
-        school: "Hexlet",
-        type: "hexlet.svg",
-        description: [
-          "Git",
-          "CSS",
-          "SASS",
-          "JavaScript",
-          "TypeScript",
-          "DOM Api",
-          "React",
-          "Redux",
-          "Redux Toolkit",
-        ],
-      },
-      {
-        valid: true,
-        name: "Backend web development",
-        school: "Hexlet",
-        type: "hexlet.svg",
-        description: ["Git", "Node.js", "Express.js", "Database basics"],
-      },
-      {
-        valid: true,
-        name: "Frontend web development",
-        school: "HTML Academy",
-        type: "html.png",
-        description: ["JavaScript", "CSS", "Less", "PHP"],
-      },
-      {
-        valid: true,
-        name: "Frontend web development",
-        school: "RSSchool",
-        type: "rss.svg",
-        description: [
-          "adaptive web applications",
-          "SPA (using outside web api to get data, local storage usage)",
-        ],
-      },
-      {
-        valid: true,
-        name: "Node.js development",
-        school: "RSSchool",
-        type: "rss.svg",
-        description: [
-          "encryption / decryption cli application",
-          "Express.js and MongoDB base application with logging, error handling and authorization",
-        ],
-      },
-      {
-        valid: true,
-        name: "TypeScript for modern development",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: ["web development with typescript"],
-      },
-      {
-        valid: true,
-        name: "Testing JS and React applications",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: [
-          "unit and integrations tests with jest, vitest, React Testing Library",
-        ],
-      },
-      {
-        valid: true,
-        name: "React, Next.js 13, TypeScript, Hooks, SSR, CSS Grid",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: [
-          "React, React hooks, Next.js 13, SSR, TypeScript, CSS Grid",
-        ],
-      },
-      {
-        valid: true,
-        name: "React Native and Expo Router",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: ["React Native and Expo Router"],
-      },
-      {
-        valid: true,
-        name: "Frontend React Senior. Job interview preparation",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: ["Frontend React Job Interview preparation"],
-      },
-    ],
-    experience: [
+    [PAGES.SECOND]: [
       {
         company: "Program-Service, Ltd",
         active: true,
@@ -180,7 +86,7 @@ export const t = {
         stack: [],
       },
     ],
-    education: [
+    [PAGES.THIRD]: [
       {
         name: "NRC «Kurchatov institute» – VIAM",
         speciality: "Material Science (Mechanical Engineering)",
@@ -200,7 +106,7 @@ export const t = {
         icon: "bmstu.svg",
       },
     ],
-    projects: [
+    [PAGES.FOURTH]: [
       {
         type: "project",
         title: "Next.js application for 3d printing studio",
@@ -325,7 +231,7 @@ export const t = {
         stack: ["TS", "React 19", "SASS"],
       },
     ],
-    contacts: {
+    [PAGES.FIFTH]: {
       telegram: "https://t.me/M_Camopykoff",
       telegramName: "@M_Camopykoff",
       linkedin: "https://www.linkedin.com/in/maxim-samorukov",
@@ -349,24 +255,20 @@ export const t = {
   },
   ru: {
     pageTitle: {
-      about: "Обо мне",
-      experience: "Опыт работы",
-      education: "Высшее образование",
-      courses: "Курсы",
-      projects: "Проекты",
-      widgets: "Виджеты",
-      testTasks: "Тестовые задания",
-      contacts: "Контакты",
+      [PAGES.FIRST]: "Обо мне",
+      [PAGES.SECOND]: "Преимущества",
+      [PAGES.THIRD]: "Процесс разработки",
+      [PAGES.FOURTH]: "Решения",
+      [PAGES.FIFTH]: "Контакты",
     },
     menu: {
-      about: "Обо мне",
-      experience: "Опыт",
-      education: "Образование",
-      courses: "Курсы",
-      projects: "Проекты",
-      contacts: "Контакты",
+      [PAGES.FIRST]: "Обо мне",
+      [PAGES.SECOND]: "Преимущества",
+      [PAGES.THIRD]: "Этапы разработки",
+      [PAGES.FOURTH]: "Решения",
+      [PAGES.FIFTH]: "Контакты",
     },
-    about: {
+    [PAGES.FIRST]: {
       brief: {
         name: "Максим Саморуков",
         occupation: "фронтенд-разработчик",
@@ -381,99 +283,7 @@ export const t = {
           "Сочетание степени к.т.н. в материаловедении, инженерного бэкграунда и опыта в веб-разработке позволяет мне комплексно оценивать предметную область для <span class='accent'>эффективного решения задач</span>.",
       },
     },
-    courses: [
-      {
-        valid: true,
-        name: "Frontend web development",
-        school: "Hexlet",
-        type: "hexlet.svg",
-        description: [
-          "Git",
-          "CSS",
-          "SASS",
-          "JavaScript",
-          "TypeScript",
-          "DOM Api",
-          "React",
-          "Redux",
-          "Redux Toolkit",
-        ],
-      },
-      {
-        valid: true,
-        name: "Backend web development",
-        school: "Hexlet",
-        type: "hexlet.svg",
-        description: ["Git", "Node.js", "Express.js", "Database basics"],
-      },
-      {
-        valid: true,
-        name: "Frontend web development",
-        school: "HTML Academy",
-        type: "html.png",
-        description: ["JavaScript", "CSS", "Less", "PHP"],
-      },
-      {
-        valid: true,
-        name: "Frontend web development",
-        school: "RSSchool",
-        type: "rss.svg",
-        description: [
-          "adaptive web applications",
-          "SPA (using outside web api to get data, local storage usage)",
-        ],
-      },
-      {
-        valid: true,
-        name: "Node.js development",
-        school: "RSSchool",
-        type: "rss.svg",
-        description: [
-          "encryption / decryption cli application",
-          "Express.js and MongoDB base application with logging, error handling and authorization",
-        ],
-      },
-      {
-        valid: true,
-        name: "TypeScript for modern development",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: ["web development with typescript"],
-      },
-      {
-        valid: true,
-        name: "Testing JS and React applications",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: [
-          "unit and integrations tests with jest, vitest, React Testing Library",
-        ],
-      },
-      {
-        valid: true,
-        name: "React, Next.js 13, TypeScript, Hooks, SSR, CSS Grid",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: [
-          "React, React hooks, Next.js 13, SSR, TypeScript, CSS Grid",
-        ],
-      },
-      {
-        valid: true,
-        name: "React Native and Expo Router",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: ["React Native and Expo Router"],
-      },
-      {
-        valid: true,
-        name: "Frontend React Senior. Job interview preparation",
-        school: "Stepik",
-        type: "stepik.svg",
-        description: ["Frontend React Job Interview preparation"],
-      },
-    ],
-    experience: [
+    [PAGES.SECOND]: [
       {
         company: "Программ-Сервис, ООО",
         active: true,
@@ -528,7 +338,7 @@ export const t = {
         stack: [],
       },
     ],
-    education: [
+    [PAGES.THIRD]: [
       {
         name: "НИЦ «Курчатовский институт» – ВИАМ",
         speciality: "Материаловедение (машиностроение)",
@@ -548,7 +358,7 @@ export const t = {
         icon: "bmstu.svg",
       },
     ],
-    projects: [
+    [PAGES.FOURTH]: [
       {
         type: "project",
         title: "Next.js приложение студии 3d печати",
@@ -674,7 +484,7 @@ export const t = {
         stack: ["TS", "React 19", "SASS"],
       },
     ],
-    contacts: {
+    [PAGES.FIFTH]: {
       telegram: "https://t.me/M_Camopykoff",
       telegramName: "@M_Camopykoff",
       linkedin: "https://www.linkedin.com/in/maxim-samorukov",
