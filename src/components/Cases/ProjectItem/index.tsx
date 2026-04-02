@@ -1,4 +1,4 @@
-import type { ProjectItemType } from "@/widgets/Projects";
+import type { ProjectItemType } from "@/widgets/Cases";
 import { motion } from "motion/react";
 import GHIcon from "@/assets/gh.svg?react";
 import DeployIcon from "@/assets/deploy.svg?react";

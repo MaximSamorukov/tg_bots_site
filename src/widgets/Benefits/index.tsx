@@ -2,9 +2,9 @@ import { motion } from "motion/react";
 import s from "./style.module.scss";
 import { PAGES } from "@/constants";
 import { useTranslation } from "@/providers/translations";
-import { ExperienceItem } from "@/components/Experience/ExperienceItem";
+import { ExperienceItem } from "@/components/Benefits/ExperienceItem";
 
-export const Experience = () => {
+export const Benefits = () => {
   const c = useTranslation();
   return (
     <motion.div

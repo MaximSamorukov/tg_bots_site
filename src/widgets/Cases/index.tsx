@@ -2,7 +2,7 @@ import { useTranslation } from "@/providers/translations";
 import s from "./style.module.scss";
 import { PAGES } from "@/constants";
 import { useMemo } from "react";
-import { ProjectItem } from "@/components/Projects/ProjectItem";
+import { ProjectItem } from "@/components/Cases/ProjectItem";
 
 type ProjectType = "project" | "widget" | "testTask";
 
@@ -23,7 +23,7 @@ const init = {
   testTask: [],
 } as DataType;
 
-export const Projects = () => {
+export const Cases = () => {
   const c = useTranslation();
   const { project, widget } = useMemo(() => {
     const data = c.t[PAGES.FOURTH].reduce((acc, i) => {

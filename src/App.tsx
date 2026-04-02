@@ -1,10 +1,10 @@
 import { useMediaQuery } from "@uidotdev/usehooks";
 import { Menu } from "@/widgets/Menu";
-import { About } from "@/widgets/About";
+import { Main } from "@/widgets/Main";
 import { Contacts } from "@/widgets/Contacts";
-import { Experience } from "@/widgets/Experience";
-import { Education } from "@/widgets/Education";
-import { Projects } from "@/widgets/Projects";
+import { Benefits } from "@/widgets/Benefits";
+import { Steps } from "@/widgets/Steps";
+import { Cases } from "@/widgets/Cases";
 import { AccentBox } from "./components/Shared/AccentBox";
 import { Background } from "./components/Shared/Background";
 
@@ -16,10 +16,10 @@ export function App() {
   return (
     <>
       <Menu />
-      <About />
-      <Experience />
-      <Education />
-      <Projects />
+      <Main />
+      <Benefits />
+      <Steps />
+      <Cases />
       <Contacts />
       <AccentBox count={90} width={10} top={top} rotate={45} left={left} />
       <AccentBox

@@ -7,9 +7,9 @@ import { useMediaQuery } from "@uidotdev/usehooks";
 import s from "./style.module.scss";
 import { PAGES } from "@/constants";
 import { useTranslation } from "@/providers/translations";
-import { DownloadResumeBtn } from "@/components/About/DownloadResumeBtn";
+import { DownloadResumeBtn } from "@/components/Main/DownloadResumeBtn";
 
-export const About = () => {
+export const Main = () => {
   const c = useTranslation();
   const less980px = useMediaQuery("(max-width: 980px)");
   if (less980px) {

@@ -3,10 +3,10 @@ import { PAGES } from "./constants";
 export const t = {
   en: {
     pageTitle: {
-      [PAGES.FIRST]: "About me",
+      [PAGES.FIRST]: "Main",
       [PAGES.SECOND]: "Benefits",
       [PAGES.THIRD]: "Development steps",
-      [PAGES.FOURTH]: "Bot examples",
+      [PAGES.FOURTH]: "Cases",
       [PAGES.FIFTH]: "Contacts",
     },
     menu: {
@@ -255,7 +255,7 @@ export const t = {
   },
   ru: {
     pageTitle: {
-      [PAGES.FIRST]: "Обо мне",
+      [PAGES.FIRST]: "Главная",
       [PAGES.SECOND]: "Преимущества",
       [PAGES.THIRD]: "Процесс разработки",
       [PAGES.FOURTH]: "Решения",
