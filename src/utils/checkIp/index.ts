@@ -6,8 +6,18 @@ type Response = {
   country_name: string | null;
   languages: string | null;
 };
+
+const defaultResponse = {
+  ip: null,
+  city: null,
+  country_name: null,
+  languages: null,
+};
 const SERVER_URL = "https://check-client-app.vercel.app/api/bots"; // "http://localhost:3000/api";
 export const checkClientData = async (): Promise<Response> => {
+  if (import.meta.env.DEV) {
+    return Promise.resolve(defaultResponse);
+  }
   try {
     const response = await fetch(CHECK_IP_URL)
       .then((d) => d.json())
@@ -28,11 +38,13 @@ export const checkClientData = async (): Promise<Response> => {
       country_name: null,
       languages: null,
     };
-    fetch(SERVER_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(errorObject),
-    }).catch(console.error);
+    if (import.meta.env.PROD) {
+      fetch(SERVER_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(errorObject),
+      }).catch(console.error);
+    }
     return errorObject;
   }
 };

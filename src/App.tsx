@@ -22,13 +22,7 @@ export function App() {
       <Cases />
       <Contacts />
       <AccentBox count={90} width={10} top={top} rotate={45} left={left} />
-      <AccentBox
-        count={100}
-        width={4}
-        top={"150px"}
-        rotate={45}
-        right={"30%"}
-      />
+      <AccentBox count={100} width={4} top={"30px"} rotate={90} right={"30%"} />
       <AccentBox
         count={25}
         width={5}

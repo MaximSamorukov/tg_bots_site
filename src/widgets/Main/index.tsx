@@ -1,13 +1,15 @@
 import { motion } from "motion/react";
-import GitHubIcon from "@/assets/gh.svg?react";
-import EmailIcon from "@/assets/email.svg?react";
-import LinkedInIcon from "@/assets/ln.svg?react";
-import TelegramIcon from "@/assets/tg.svg?react";
+
+import Bot1 from "@/assets/first/bot_1.png";
+import Bot2 from "@/assets/first/bot_2.png";
+
 import { useMediaQuery } from "@uidotdev/usehooks";
-import s from "./style.module.scss";
 import { PAGES } from "@/constants";
 import { useTranslation } from "@/providers/translations";
-import { DownloadResumeBtn } from "@/components/Main/DownloadResumeBtn";
+import { Title } from "@/components/Main/Title";
+import { Point } from "@/components/Main/Point";
+import s from "./style.module.scss";
+import { FormButton } from "@/components/Main/FormButton";
 
 export const Main = () => {
   const c = useTranslation();
@@ -21,68 +23,18 @@ export const Main = () => {
           transition={{ duration: 0.5 }}
           className={s.data}
         >
-          <div className={s.data__brief}>
-            <div className={s.data__title}>{c.t[PAGES.FIRST].brief.name}</div>
-            <div className={s.data__occupation}>
-              {c.t[PAGES.FIRST].brief.occupation}
-            </div>
-            <div className={s.data__moto}>{c.t[PAGES.FIRST].brief.moto}</div>
+          <div className={s.data__main}>
+            <Title
+              first={c.t[PAGES.FIRST].main.title.first}
+              second={c.t[PAGES.FIRST].main.title.second}
+            />
+            {c.t[PAGES.FIRST].main.points.map((point) => (
+              <Point point={point} />
+            ))}
+            <FormButton label="Рассчитать стоимость" />
           </div>
-          <div className={s.data__summary}>
-            <span
-              dangerouslySetInnerHTML={{
-                __html: c.t[PAGES.FIRST].summary.first,
-              }}
-            />
-            <br />
-            <br />
-            <span
-              dangerouslySetInnerHTML={{
-                __html: c.t[PAGES.FIRST].summary.second,
-              }}
-            />
-            <br />
-            <br />
-            <span
-              dangerouslySetInnerHTML={{
-                __html: c.t[PAGES.FIRST].summary.third,
-              }}
-            />
-          </div>
-          <div className={s.data__brief}>
-            <div className={s.data__socials}>
-              <a
-                href={c.t.contacts.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={s.data__socialItem}
-              >
-                <GitHubIcon />
-              </a>
-              <a
-                href={c.t.contacts.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={s.data__socialItem}
-              >
-                <LinkedInIcon />
-              </a>
-              <a
-                href={`mailto:${c.t.contacts.email}`}
-                className={s.data__socialItem}
-              >
-                <EmailIcon />
-              </a>
-              <a
-                href={c.t.contacts.telegram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={s.data__socialItem}
-              >
-                <TelegramIcon />
-              </a>
-            </div>
-            <DownloadResumeBtn />
+          <div className={s.data__image}>
+            <img src={Bot2} width="100px" alt="bot" />
           </div>
         </motion.div>
       </div>
@@ -96,62 +48,18 @@ export const Main = () => {
         transition={{ duration: 0.5 }}
         className={s.data}
       >
-        <div className={s.data__brief}>
-          <div className={s.data__title}>{c.t[PAGES.FIRST].brief.name}</div>
-          <div className={s.data__occupation}>
-            {c.t[PAGES.FIRST].brief.occupation}
-          </div>
-          <div className={s.data__moto}>{c.t[PAGES.FIRST].brief.moto}</div>
-          <div className={s.data__socials}>
-            <a
-              href={c.t.contacts.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={s.data__socialItem}
-            >
-              <GitHubIcon />
-            </a>
-            <a
-              href={c.t.contacts.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={s.data__socialItem}
-            >
-              <LinkedInIcon />
-            </a>
-            <a
-              href={`mailto:${c.t.contacts.email}`}
-              className={s.data__socialItem}
-            >
-              <EmailIcon />
-            </a>
-            <a
-              href={c.t.contacts.telegram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={s.data__socialItem}
-            >
-              <TelegramIcon />
-            </a>
-          </div>
-          <DownloadResumeBtn />
+        <div className={s.data__main}>
+          <Title
+            first={c.t[PAGES.FIRST].main.title.first}
+            second={c.t[PAGES.FIRST].main.title.second}
+          />
+          {c.t[PAGES.FIRST].main.points.map((point) => (
+            <Point point={point} />
+          ))}
+          <FormButton label="Рассчитать стоимость" />
         </div>
-        <div className={s.data__summary}>
-          <span
-            dangerouslySetInnerHTML={{ __html: c.t[PAGES.FIRST].summary.first }}
-          />
-          <br />
-          <br />
-          <span
-            dangerouslySetInnerHTML={{
-              __html: c.t[PAGES.FIRST].summary.second,
-            }}
-          />
-          <br />
-          <br />
-          <span
-            dangerouslySetInnerHTML={{ __html: c.t[PAGES.FIRST].summary.third }}
-          />
+        <div className={s.data__image}>
+          <img src={Bot1} width="100%" alt="bot" />
         </div>
       </motion.div>
     </div>

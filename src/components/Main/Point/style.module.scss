@@ -1,0 +1,20 @@
+@use "../../../variables.scss" as *;
+@use "sass:map";
+
+.container {
+  width: 100%;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: $FZ_20;
+  color: $BASE_GREY;
+  font-weight: $FW_300;
+  line-height: 38px;
+  &:hover {
+    color: $BASE_LIGHT;
+    font-weight: $FW_400;
+  }
+}

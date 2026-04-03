@@ -1,0 +1,24 @@
+@use "../../../variables.scss" as *;
+@use "sass:map";
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: 52px;
+
+  &__first {
+    width: fit-content;
+    font-size: $FZ_48;
+    color: $BASE_LIGHT;
+    font-weight: $FW_700;
+  }
+  &__second {
+    width: fit-content;
+    font-size: $FZ_48;
+    color: $BASE_ACCENT;
+    font-weight: $FW_700;
+  }
+}

@@ -10,13 +10,26 @@ export const t = {
       [PAGES.FIFTH]: "Contacts",
     },
     menu: {
-      [PAGES.FIRST]: "About me",
+      [PAGES.FIRST]: "Main",
       [PAGES.SECOND]: "Benefits",
       [PAGES.THIRD]: "Steps",
       [PAGES.FOURTH]: "Exapmples",
       [PAGES.FIFTH]: "Contacts",
     },
     [PAGES.FIRST]: {
+      main: {
+        title: {
+          first: "Chatbot",
+          second: "development",
+        },
+        points: [
+          "Telegram, VK, Mini App",
+          "CRM & n8n integration",
+          "Payment service connection",
+          "Launch in as little as 3 days",
+          "Starting from 200 USD",
+        ],
+      },
       brief: {
         name: "Maksim Samorukov",
         occupation: "frontend developer",
@@ -262,13 +275,26 @@ export const t = {
       [PAGES.FIFTH]: "Контакты",
     },
     menu: {
-      [PAGES.FIRST]: "Обо мне",
+      [PAGES.FIRST]: "Главная",
       [PAGES.SECOND]: "Преимущества",
       [PAGES.THIRD]: "Этапы разработки",
       [PAGES.FOURTH]: "Решения",
       [PAGES.FIFTH]: "Контакты",
     },
     [PAGES.FIRST]: {
+      main: {
+        title: {
+          first: "Разработка",
+          second: "чат-ботов",
+        },
+        points: [
+          "Telegram, VK, Mini App",
+          "Интеграция с CRM, n8n",
+          "Подключение сервисов оплаты",
+          "Запуск от 3 дней",
+          "Стоимость от 10000 ₽",
+        ],
+      },
       brief: {
         name: "Максим Саморуков",
         occupation: "фронтенд-разработчик",
