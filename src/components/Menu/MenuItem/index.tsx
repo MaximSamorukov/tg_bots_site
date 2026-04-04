@@ -29,8 +29,8 @@ export const MenuItem: React.FC<MenuItemProps> = ({
   onSelect,
   slug,
 }) => {
-  const less580px = useMediaQuery("(max-width: 580px)");
-  if (less580px) {
+  const less680px = useMediaQuery("(max-width: 680px)");
+  if (less680px) {
     return (
       <div className={s.container}>
         <button
