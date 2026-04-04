@@ -1,15 +1,13 @@
 import { motion } from "motion/react";
-
 import Bot1 from "@/assets/first/bot_1.png";
-import Bot2 from "@/assets/first/bot_2.png";
-
 import { useMediaQuery } from "@uidotdev/usehooks";
 import { PAGES } from "@/constants";
 import { useTranslation } from "@/providers/translations";
 import { Title } from "@/components/Main/Title";
 import { Point } from "@/components/Main/Point";
-import s from "./style.module.scss";
 import { FormButton } from "@/components/Main/FormButton";
+
+import s from "./style.module.scss";
 
 export const Main = () => {
   const c = useTranslation();

@@ -101,22 +101,19 @@ export const t = {
     ],
     [PAGES.THIRD]: [
       {
-        name: "NRC «Kurchatov institute» – VIAM",
-        speciality: "Material Science (Mechanical Engineering)",
-        degree: "PHD",
-        icon: "viam.png",
+        step: "Defining goals and objectives",
       },
       {
-        name: "Moscow State Technical University N.E.Bauman",
-        speciality: "Material Science",
-        degree: "engineer developer",
-        icon: "bmstu.svg",
+        step: "Developing and agreeing on technical requirements, timelines, and costs",
       },
       {
-        name: "Moscow State Technical University N.E.Bauman",
-        speciality: "Enterprise economics",
-        degree: "engineer economist",
-        icon: "bmstu.svg",
+        step: "Development and testing",
+      },
+      {
+        step: "Acceptance testing",
+      },
+      {
+        step: "Deployment and support",
       },
     ],
     [PAGES.FOURTH]: [
@@ -366,22 +363,19 @@ export const t = {
     ],
     [PAGES.THIRD]: [
       {
-        name: "НИЦ «Курчатовский институт» – ВИАМ",
-        speciality: "Материаловедение (машиностроение)",
-        degree: "к.т.н.",
-        icon: "viam.png",
+        step: "Определение целей и задач",
       },
       {
-        name: "МГТУ им Н.Э. Баумана",
-        speciality: "Технология и оборудование сварочного производства",
-        degree: "инженер-исследователь",
-        icon: "bmstu.svg",
+        step: "Разработка и согласование ТЗ, сроков и стоимости",
       },
       {
-        name: "МГТУ им Н.Э. Баумана",
-        speciality: "Экономика и организация производства",
-        degree: "инженер-экономист",
-        icon: "bmstu.svg",
+        step: "Разработка и тестирование",
+      },
+      {
+        step: "Приемо-сдаточные испытания",
+      },
+      {
+        step: "Деплой и поддержка",
       },
     ],
     [PAGES.FOURTH]: [
