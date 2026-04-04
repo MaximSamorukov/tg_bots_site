@@ -14,6 +14,7 @@ import { FormButton } from "@/components/Main/FormButton";
 export const Main = () => {
   const c = useTranslation();
   const less980px = useMediaQuery("(max-width: 980px)");
+  const less750px = useMediaQuery("(max-width: 750px)");
   if (less980px) {
     return (
       <div id={PAGES.FIRST} className={s.container}>
@@ -33,9 +34,11 @@ export const Main = () => {
             ))}
             <FormButton label="Рассчитать стоимость" />
           </div>
-          <div className={s.data__image}>
-            <img src={Bot2} width="100px" alt="bot" />
-          </div>
+          {!less750px && (
+            <div className={s.data__image}>
+              <img src={Bot1} width="100%" alt="bot" />
+            </div>
+          )}
         </motion.div>
       </div>
     );

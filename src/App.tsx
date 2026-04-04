@@ -12,6 +12,8 @@ export function App() {
   const less680px = useMediaQuery("(max-width: 680px)");
   const top = less680px ? "80px" : "250px";
   const left = less680px ? "50px" : "250px";
+  const angel = less680px ? 0 : 90;
+  const right = less680px ? "5%" : "30%";
 
   return (
     <>
@@ -22,7 +24,13 @@ export function App() {
       <Cases />
       <Contacts />
       <AccentBox count={90} width={10} top={top} rotate={45} left={left} />
-      <AccentBox count={100} width={4} top={"30px"} rotate={90} right={"30%"} />
+      <AccentBox
+        count={100}
+        width={4}
+        top={"30px"}
+        rotate={angel}
+        right={right}
+      />
       <AccentBox
         count={25}
         width={5}
