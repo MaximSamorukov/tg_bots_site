@@ -28,10 +28,8 @@ export const Cases = () => {
 
   return (
     <div id={PAGES.FOURTH} className={s.container}>
+      <div className={s.data__title}>{c.t.pageTitle[PAGES.FOURTH]}</div>
       <div className={s.data}>
-        <div
-          className={s.data__title}
-        >{`${c.t.pageTitle[PAGES.FOURTH]} и ${c.t.pageTitle[PAGES.FOURTH]}`}</div>
         <div className={s.data__items}>
           {c.t[PAGES.FOURTH].map((i, index) => (
             <ProjectItem
@@ -42,7 +40,8 @@ export const Cases = () => {
               description={i.description}
               github={i.github}
               deploy={i.deploy}
-              image={i.img}
+              image={i.image}
+              name={i.name}
             />
           ))}
         </div>

@@ -23,7 +23,7 @@ export function App() {
       <Steps />
       <Cases />
       <Contacts />
-      <AccentBox count={90} width={10} top={top} rotate={45} left={left} />
+      {/*<AccentBox count={90} width={10} top={top} rotate={45} left={left} />
       <AccentBox
         count={100}
         width={4}
@@ -37,7 +37,7 @@ export function App() {
         bottom={"50px"}
         rotate={0}
         right={"40%"}
-      />
+      />*/}
       <Background />
     </>
   );

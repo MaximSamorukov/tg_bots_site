@@ -4,9 +4,10 @@ import GHIcon from "@/assets/gh.svg?react";
 import DeployIcon from "@/assets/deploy.svg?react";
 import s from "./style.module.scss";
 import { StackItem } from "../StackItem";
+import { ItemCard } from "@/components/Shared/ItemCard";
+import { FormButton } from "../FormButton";
 
 type ProjectItemProps = {
-  active: boolean;
   type: string;
   name: string;
   title: string;
@@ -28,13 +29,13 @@ export const ProjectItem = ({
   image,
 }: ProjectItemProps) => {
   return (
-    <motion.div
-      className={s.item}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: index * 0.15 }}
-    >
-      <div className={s.item__title}>{title}</div>
-    </motion.div>
+    <ItemCard index={index}>
+      <div className={s.item}>
+        <div className={s.item__image}>image</div>
+        <div className={s.item__title}>{title}</div>
+        <div className={s.item__description}>{description}</div>
+        <FormButton label="Заказать" />
+      </div>
+    </ItemCard>
   );
 };

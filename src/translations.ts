@@ -90,7 +90,7 @@ export const t = {
         description: "Telegram бот магазин",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -100,7 +100,7 @@ export const t = {
         description: "Telegram бот оплаты постов в канале",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -110,7 +110,7 @@ export const t = {
         description: "Telegram бот оплаты постов в канале",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -120,7 +120,7 @@ export const t = {
         description: "Telegram бот магазин",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -130,7 +130,7 @@ export const t = {
         description: "Telegram бот оплаты постов в канале",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -140,7 +140,7 @@ export const t = {
         description: "Telegram бот оплаты постов в канале",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
     ],
     [PAGES.FIFTH]: {
@@ -254,7 +254,7 @@ export const t = {
         description: "Telegram бот магазин",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -264,7 +264,7 @@ export const t = {
         description: "Telegram бот оплаты постов в канале",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -274,7 +274,7 @@ export const t = {
         description: "Telegram бот оплаты постов в канале",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -284,7 +284,7 @@ export const t = {
         description: "Telegram бот магазин",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -294,7 +294,7 @@ export const t = {
         description: "Telegram бот оплаты постов в канале",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
       {
         active: true,
@@ -304,7 +304,7 @@ export const t = {
         description: "Telegram бот оплаты постов в канале",
         github: null,
         deploy: null,
-        img: "",
+        image: "",
       },
     ],
     [PAGES.FIFTH]: {
