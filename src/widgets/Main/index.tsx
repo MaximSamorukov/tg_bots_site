@@ -30,7 +30,7 @@ export const Main = () => {
             {c.t[PAGES.FIRST].main.points.map((point) => (
               <Point point={point} />
             ))}
-            <FormButton label="Рассчитать стоимость" />
+            <FormButton label="Обсудить проект" />
           </div>
           {!less750px && (
             <div className={s.data__image}>
@@ -57,7 +57,7 @@ export const Main = () => {
           {c.t[PAGES.FIRST].main.points.map((point) => (
             <Point point={point} />
           ))}
-          <FormButton label="Рассчитать стоимость" />
+          <FormButton label="Обсудить проект" />
         </div>
         <div className={s.data__image}>
           <img src={Bot1} width="100%" alt="bot" />

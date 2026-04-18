@@ -46,57 +46,22 @@ export const t = {
     },
     [PAGES.SECOND]: [
       {
-        company: "Program-Service, Ltd",
         active: true,
-        title: "React developer",
-        start: "01.09.2023",
-        end: "30.05.2025",
-        description: [
-          "Development of React UI components and implementation of integration logic between interfaces and backend via REST API and WebSocket. Development of state management logic using a state manager. Supporting the frontend part of the application. Collaboration with backend, QA, design, and analytics teams within the SCRUM process.",
-        ],
-        stack: [
-          "Electron",
-          "TypeScript",
-          "React",
-          "Redux",
-          "SCSS",
-          "AntD",
-          "OpenLayers",
-          "jest",
-          "RTL",
-          "Git",
-        ],
+        title: "Automation",
+        description:
+          "Chat bots with LLM can be trained on company data, adapt to business specifics, and conduct dialogue in a lively, natural form. They are capable of understanding context, remembering conversation details, and adapting to the client's communication style, ensuring maximum convenience of interaction.",
       },
       {
-        company: "Mahuru, LC",
         active: true,
-        title: "React developer",
-        start: "01.02.2021",
-        end: "15.08.2023",
-        description: [
-          "Development of responsive, cross-browser interfaces for client applications. Creating UI components and integrating interfaces with the backend via REST API. Working with a mapping library. Supporting the frontend part of the application. Collaboration with backend, QA, and design teams.",
-        ],
-        stack: [
-          "TypeScript",
-          "React",
-          "Redux",
-          "SCSS",
-          "AntD",
-          "jest",
-          "RTL",
-          "Git",
-        ],
+        title: "Integration",
+        description:
+          "Chat bots can integrate with other systems and applications, can send dialogues to CRM and even have their own CRM. Integrations allow managing business processes more efficiently.",
       },
       {
-        company: "NRC 'Kurchatov institute', FSUE 'VIAM'",
         active: true,
-        title: "Engineer developer",
-        start: "01.09.2008",
-        end: "01.09.2020",
-        description: [
-          "development of aviation field material science technologies",
-        ],
-        stack: [],
+        title: "Analytics",
+        description:
+          "Chat bots can collect and analyze data about customers and their behavior, which helps companies understand customer preferences and needs, as well as improve the quality of products and services.",
       },
     ],
     [PAGES.THIRD]: [
@@ -308,57 +273,22 @@ export const t = {
     },
     [PAGES.SECOND]: [
       {
-        company: "Программ-Сервис, ООО",
         active: true,
-        title: "Разработчик интерфейсов",
-        start: "02.08.2023",
-        end: "30.05.2025",
-        description: [
-          "Разработка React UI компонентов и написание логики интеграций интерфейсов и бэкенда по REST API и WebSocket. Разработка логики управления состоянием с использованием стейт-менеджера. Поддержка frontend части приложения. Взаимодействие с командой бэкенда, тестирования, дизайна и аналитики в рамках SCRUM-процесса.",
-        ],
-        stack: [
-          "Electron",
-          "TypeScript",
-          "React",
-          "Redux",
-          "SCSS",
-          "AntD",
-          "OpenLayers",
-          "jest",
-          "RTL",
-          "Git",
-        ],
+        title: "Автоматизация",
+        description:
+          "Чат боты с LLM могут обучаться на данных компании, адаптироваться под специфику бизнеса и вести диалог в живой, естественной форме. Они способны понимать контекст, запоминать детали разговора и подстраиваться под стиль общения клиента, обеспечивая максимально удобное взаимодействие.",
       },
       {
-        company: "Махуру, ООО",
         active: true,
-        title: "Разработчик интерфейсов",
-        start: "01.02.2021",
-        end: "01.08.2023",
-        description: [
-          "Разработка адаптивных, кроссбраузерных интерфейсов для клиентских приложений. Создание UI-компонентов и интеграция интерфейсов и бэкенда по REST API. Работа с картографической библиотекой. Поддержка frontend-части приложения. Взаимодействие с командой бэкенда, тестирования и дизайна.",
-        ],
-        stack: [
-          "TypeScript",
-          "React",
-          "Redux",
-          "SCSS",
-          "AntD",
-          "jest",
-          "RTL",
-          "Git",
-        ],
+        title: "Интеграция",
+        description:
+          "Чат-боты могут интегрироваться с другими системами и приложениями, могут отправлять диалоги в CRM и даже имеют свою собственную CRM. Интеграции позволяют управлять бизнес-процессами более эффективно.",
       },
       {
-        company: "НИЦ 'Курчатовский институт', ФГУП 'ВИАМ'",
         active: true,
-        title: "Инженер-исследователь",
-        start: "01.09.2008",
-        end: "01.09.2020",
-        description: [
-          "разработка технологий в области авиационного материаловедения",
-        ],
-        stack: [],
+        title: "Аналитика",
+        description:
+          "Чат-боты могут собирать и анализировать данные о клиентах и их поведении, что помогает компаниям понимать предпочтения и потребности своих клиентов, а также улучшать качество продуктов и услуг.",
       },
     ],
     [PAGES.THIRD]: [
