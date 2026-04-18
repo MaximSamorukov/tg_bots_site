@@ -10,8 +10,8 @@ export const StepsComponent = () => {
   const c = useTranslation();
   return (
     <div className={s.container}>
-      {c.t[PAGES.THIRD].map(({ step }) => (
-        <StepItem key={step} label={step} />
+      {c.t[PAGES.THIRD].map(({ step }, i) => (
+        <StepItem number={i + 1} key={step} label={step} />
       ))}
     </div>
   );

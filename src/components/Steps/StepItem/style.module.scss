@@ -1,4 +1,7 @@
+@use "../../../variables.scss" as *;
+
 .container {
-  width: 300px;
+  width: fit-content;
   height: fit-content;
+  font-size: $FZ_22;
 }

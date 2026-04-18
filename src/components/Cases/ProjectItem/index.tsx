@@ -5,14 +5,27 @@ import DeployIcon from "@/assets/deploy.svg?react";
 import s from "./style.module.scss";
 import { StackItem } from "../StackItem";
 
-type ProjectItemProps = ProjectItemType & { index: number };
+type ProjectItemProps = {
+  active: boolean;
+  type: string;
+  name: string;
+  title: string;
+  description: string;
+  github: string | null;
+  deploy: string | null;
+  image: string;
+  index: number;
+};
 
 export const ProjectItem = ({
+  index,
+  type,
+  name,
   title,
+  description,
   github,
   deploy,
-  stack,
-  index,
+  image,
 }: ProjectItemProps) => {
   return (
     <motion.div
@@ -22,19 +35,6 @@ export const ProjectItem = ({
       transition={{ duration: 0.5, delay: index * 0.15 }}
     >
       <div className={s.item__title}>{title}</div>
-      <div className={s.item__stack}>
-        {stack.map((i, index) => (
-          <StackItem key={`${i}_${index}`} name={i} />
-        ))}
-      </div>
-      <div className={s.item__links}>
-        <a target="_blank" rel="noopener noreferrer" href={github}>
-          <GHIcon />
-        </a>
-        <a target="_blank" rel="noopener noreferrer" href={deploy}>
-          <DeployIcon />
-        </a>
-      </div>
     </motion.div>
   );
 };

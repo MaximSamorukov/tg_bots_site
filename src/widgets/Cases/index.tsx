@@ -25,16 +25,6 @@ const init = {
 
 export const Cases = () => {
   const c = useTranslation();
-  const { project, widget } = useMemo(() => {
-    const data = c.t[PAGES.FOURTH].reduce((acc, i) => {
-      const type = i.type;
-      const currentData = acc[type];
-      const nextData = [...currentData, i];
-      const newAcc = Object.assign({ ...acc }, { [type]: nextData });
-      return newAcc;
-    }, init);
-    return data;
-  }, [c.t[PAGES.FOURTH]]);
 
   return (
     <div id={PAGES.FOURTH} className={s.container}>
@@ -43,16 +33,16 @@ export const Cases = () => {
           className={s.data__title}
         >{`${c.t.pageTitle[PAGES.FOURTH]} и ${c.t.pageTitle[PAGES.FOURTH]}`}</div>
         <div className={s.data__items}>
-          {[...project, ...widget].map((i, index) => (
+          {c.t[PAGES.FOURTH].map((i, index) => (
             <ProjectItem
               index={index}
-              key={`${i.title}_${index}`}
+              key={i.name}
               title={i.title}
               type={i.type}
               description={i.description}
               github={i.github}
               deploy={i.deploy}
-              stack={i.stack}
+              image={i.img}
             />
           ))}
         </div>
