@@ -11,7 +11,7 @@ export const ItemCard: React.FC<ItemCardProps> = ({ children, index }) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: index * 0.15 }}
+      transition={{ duration: 0.1 }}
       className={s.container}
     >
       {children}

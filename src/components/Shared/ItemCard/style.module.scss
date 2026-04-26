@@ -12,10 +12,8 @@
   border-radius: 15px;
   position: relative;
   cursor: default;
-  background-color: rgba($BASE_LIGHT, 0.1);
-  &:hover {
-    background-color: rgba($BASE_LIGHT, 0.15);
-  }
+  background-color: $BASE_BACKGROUND_OPTION;
+  border: 1px solid $BASE_BORDER;
   @media (max-width: 980px) {
     max-width: 350px;
   }

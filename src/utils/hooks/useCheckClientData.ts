@@ -19,7 +19,7 @@ export const useCheckClientData = () => {
       if ((languages || "").includes("ru-RU")) {
         c.setCurrentLanguage("ru");
       } else {
-        c.setCurrentLanguage("en");
+        c.setCurrentLanguage("ru");
       }
     });
   }, []);

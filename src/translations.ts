@@ -47,21 +47,45 @@ export const t = {
     [PAGES.SECOND]: [
       {
         active: true,
-        title: "Automation",
+        title: "Сбор заявок и лидов",
+        type: "Продажи",
         description:
-          "Chat bots with LLM can be trained on company data, adapt to business specifics, and conduct dialogue in a lively, natural form. They are capable of understanding context, remembering conversation details, and adapting to the client's communication style, ensuring maximum convenience of interaction.",
+          "Квалифицирует клиента, собирает контакт и передаёт менеджеру. Автоответ в любое время суток.",
       },
       {
         active: true,
-        title: "Integration",
+        title: "Оплата и подписки",
+        type: "Монетизация",
         description:
-          "Chat bots can integrate with other systems and applications, can send dialogues to CRM and even have their own CRM. Integrations allow managing business processes more efficiently.",
+          "Приём платежей через ЮKassa и T-Bank. Выдача доступов, квитанций, напоминания об оплате.",
       },
       {
         active: true,
-        title: "Analytics",
+        title: "Техподдержка и FAQ",
+        type: "Поддержка",
         description:
-          "Chat bots can collect and analyze data about customers and their behavior, which helps companies understand customer preferences and needs, as well as improve the quality of products and services.",
+          "ЧОтвечает на типовые вопросы по базе знаний. Переводит на оператора только сложные случаи.",
+      },
+      {
+        active: true,
+        title: "Запись на услуги",
+        type: "Запись",
+        description:
+          "Клиент выбирает время, подтверждает запись. Напоминания за 24 часа и за 1 час.",
+      },
+      {
+        active: true,
+        title: "Рассылки по базе",
+        type: "Маркетинг",
+        description:
+          "Сегментация аудитории, таргетированные рассылки с кнопками. Открываемость до 90%.",
+      },
+      {
+        active: true,
+        title: "GPT-консультант",
+        type: "ИИ & RAG",
+        description:
+          "Обученный на вашем каталоге или документации ИИ. Отвечает точно и по делу, не выдумывает.",
       },
     ],
     [PAGES.THIRD]: [
@@ -211,21 +235,45 @@ export const t = {
     [PAGES.SECOND]: [
       {
         active: true,
-        title: "Автоматизация",
+        title: "Сбор заявок и лидов",
+        type: "Продажи",
         description:
-          "Чат боты с LLM могут обучаться на данных компании, адаптироваться под специфику бизнеса и вести диалог в живой, естественной форме. Они способны понимать контекст, запоминать детали разговора и подстраиваться под стиль общения клиента, обеспечивая максимально удобное взаимодействие.",
+          "Квалифицирует клиента, собирает контакт и передаёт менеджеру. Автоответ в любое время суток.",
       },
       {
         active: true,
-        title: "Интеграция",
+        title: "Оплата и подписки",
+        type: "Монетизация",
         description:
-          "Чат-боты могут интегрироваться с другими системами и приложениями, могут отправлять диалоги в CRM и даже имеют свою собственную CRM. Интеграции позволяют управлять бизнес-процессами более эффективно.",
+          "Приём платежей через ЮKassa и T-Bank. Выдача доступов, квитанций, напоминания об оплате.",
       },
       {
         active: true,
-        title: "Аналитика",
+        title: "Техподдержка и FAQ",
+        type: "Поддержка",
         description:
-          "Чат-боты могут собирать и анализировать данные о клиентах и их поведении, что помогает компаниям понимать предпочтения и потребности своих клиентов, а также улучшать качество продуктов и услуг.",
+          "ЧОтвечает на типовые вопросы по базе знаний. Переводит на оператора только сложные случаи.",
+      },
+      {
+        active: true,
+        title: "Запись на услуги",
+        type: "Запись",
+        description:
+          "Клиент выбирает время, подтверждает запись. Напоминания за 24 часа и за 1 час.",
+      },
+      {
+        active: true,
+        title: "Рассылки по базе",
+        type: "Маркетинг",
+        description:
+          "Сегментация аудитории, таргетированные рассылки с кнопками. Открываемость до 90%.",
+      },
+      {
+        active: true,
+        title: "GPT-консультант",
+        type: "ИИ & RAG",
+        description:
+          "Обученный на вашем каталоге или документации ИИ. Отвечает точно и по делу, не выдумывает.",
       },
     ],
     [PAGES.THIRD]: [

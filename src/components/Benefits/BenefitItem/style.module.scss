@@ -3,7 +3,7 @@
 .container {
   width: 100%;
   max-width: 350px;
-  height: 500px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,7 +38,7 @@
 
   &__description {
     width: 100%;
-    font-size: $FZ_16;
+    font-size: $FZ_12;
     font-weight: $FW_300;
   }
   &__descriptionItem {

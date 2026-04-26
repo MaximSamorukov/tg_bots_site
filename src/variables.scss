@@ -1,24 +1,53 @@
 @use "sass:map";
 
+$LIGHT_BACKGROUND_LIGHT_1: #f0f2f7;
+$LIGHT_BACKGROUND_LIGHT_2: rgb(247, 248, 250);
+$LIGHT_BACKGROUND_WHITE: #ffffff;
+$LIGHT_BORDER_COLOR: rgba(0, 0, 0, 0.09);
+
+$LIGHT_FONT_GREY_BASE: #404756;
+$LIGHT_FONT_GREY_BASE_HOVER: #1a56db;
+
+$LIGHT_FONT_BLACK_1: #0d1117;
+
+$LIGHT_ACCENT_COLOR: #1a56db;
+
+$LIGHT_ACCENT_COLOR_HOVER: #1342b5;
+
 $themes: (
   light: (
-    bg-color: rgb(222, 225, 236),
-    text-color: rgb(148, 163, 184),
-    text-hovered: rgb(0, 110, 255),
-    accent-color: rgb(94, 234, 212),
+    bg-color_1: $LIGHT_BACKGROUND_LIGHT_1,
+    bg-color_2: $LIGHT_BACKGROUND_LIGHT_2,
+    bg-white: $LIGHT_BACKGROUND_WHITE,
+    border: $LIGHT_BORDER_COLOR,
+
+    text-color: $LIGHT_FONT_GREY_BASE,
+    text-hovered: $LIGHT_FONT_GREY_BASE_HOVER,
+    text-black: $LIGHT_FONT_BLACK_1,
+
+    accent-color: $LIGHT_ACCENT_COLOR,
+    accent-color-hover: $LIGHT_ACCENT_COLOR_HOVER,
   ),
   dark: (
-    bg-color: rgba(15, 23, 42, 1),
+    bg-color_1: rgba(15, 23, 42, 1),
+    bg-color_2: rgba(15, 23, 42, 1),
+    bg-white: rgba(15, 23, 42, 1),
+    border: rgba(15, 23, 42, 1),
     text-color: rgb(148, 163, 184),
     text-hovered: rgb(226, 232, 240),
+    text-black: rgb(148, 163, 184),
     accent-color: rgb(94, 234, 212),
+    accent-color-hover: rgb(94, 234, 212),
   ),
 );
 
-$BASE_LIGHT: map.get(map.get($themes, dark), text-hovered);
-$BASE_GREY: map.get(map.get($themes, dark), text-color);
-$BASE_ACCENT: map.get(map.get($themes, dark), accent-color);
-$BASE_BACKGROUND: map.get(map.get($themes, dark), bg-color);
+$BASE_LIGHT: map.get(map.get($themes, light), text-hovered);
+$BASE_GREY: map.get(map.get($themes, light), text-color);
+$BASE_ACCENT: map.get(map.get($themes, light), accent-color);
+
+$BASE_BACKGROUND: map.get(map.get($themes, light), bg-color_1);
+$BASE_BACKGROUND_OPTION: map.get(map.get($themes, light), bg-color_2);
+$BASE_BORDER: map.get(map.get($themes, light), border);
 
 $FZ_12: 12px;
 $FZ_14: 14px;
