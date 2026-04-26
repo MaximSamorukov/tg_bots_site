@@ -3,6 +3,7 @@ import { useTranslation } from "@/providers/translations";
 import resume from "@/assets/resume/Резюме_frontend_Саморуков.pdf";
 import s from "./style.module.scss";
 import { PAGES } from "@/constants";
+import { Title } from "@/components/Shared/Title";
 
 export const Contacts = () => {
   const c = useTranslation();
@@ -14,7 +15,7 @@ export const Contacts = () => {
         whileInView={{ filter: "none" }}
         transition={{ duration: 1 }}
       >
-        <div className={s.data__title}>{c.t.pageTitle.contacts}</div>
+        <Title item={PAGES.FIFTH} />
         <div className={s.data__contacts}>
           <div className={s.data__contactItem}>
             <span>Telegram:</span>

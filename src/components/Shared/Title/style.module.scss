@@ -1,0 +1,9 @@
+@use "../../../variables.scss" as *;
+@use "sass:math";
+
+.container {
+  width: fit-content;
+  box-sizing: border-box;
+  font-size: $FZ_32;
+  color: $BASE_GREY;
+}

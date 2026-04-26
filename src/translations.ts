@@ -9,6 +9,29 @@ export const t = {
       [PAGES.FOURTH]: "Cases",
       [PAGES.FIFTH]: "Contacts",
     },
+    itemTitle: {
+      [PAGES.FIRST]: { title: "Main", subtitle: "Main", moto: "Main" },
+      [PAGES.SECOND]: {
+        title: "Benefits",
+        subtitle: "Benefits",
+        moto: "Benefits",
+      },
+      [PAGES.THIRD]: {
+        title: "Development steps",
+        subtitle: "Development steps",
+        moto: "Development steps",
+      },
+      [PAGES.FOURTH]: {
+        title: "Cases",
+        subtitle: "Cases",
+        moto: "Cases",
+      },
+      [PAGES.FIFTH]: {
+        title: "Contacts",
+        subtitle: "Contacts",
+        moto: "Contacts",
+      },
+    },
     menu: {
       [PAGES.FIRST]: "Main",
       [PAGES.SECOND]: "Benefits",
@@ -196,6 +219,29 @@ export const t = {
       [PAGES.THIRD]: "Процесс разработки",
       [PAGES.FOURTH]: "Решения",
       [PAGES.FIFTH]: "Контакты",
+    },
+    itemTitle: {
+      [PAGES.FIRST]: { title: "Главная", subtitle: "Main", moto: "Main" },
+      [PAGES.SECOND]: {
+        title: "Преимущества",
+        subtitle: "Benefits",
+        moto: "Benefits",
+      },
+      [PAGES.THIRD]: {
+        title: "Процесс разработки",
+        subtitle: "Development steps",
+        moto: "Development steps",
+      },
+      [PAGES.FOURTH]: {
+        title: "Решения",
+        subtitle: "Cases",
+        moto: "Cases",
+      },
+      [PAGES.FIFTH]: {
+        title: "Контакты",
+        subtitle: "Contacts",
+        moto: "Contacts",
+      },
     },
     menu: {
       [PAGES.FIRST]: "Главная",

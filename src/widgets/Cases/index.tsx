@@ -3,6 +3,7 @@ import s from "./style.module.scss";
 import { PAGES } from "@/constants";
 import { useMemo } from "react";
 import { ProjectItem } from "@/components/Cases/ProjectItem";
+import { Title } from "@/components/Shared/Title";
 
 type ProjectType = "project" | "widget" | "testTask";
 
@@ -28,6 +29,7 @@ export const Cases = () => {
 
   return (
     <div id={PAGES.FOURTH} className={s.container}>
+      <Title item={PAGES.FOURTH} />
       <div className={s.data__title}>{c.t.pageTitle[PAGES.FOURTH]}</div>
       <div className={s.data}>
         <div className={s.data__items}>
