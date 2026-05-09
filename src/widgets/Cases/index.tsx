@@ -30,7 +30,6 @@ export const Cases = () => {
   return (
     <div id={PAGES.FOURTH} className={s.container}>
       <Title item={PAGES.FOURTH} />
-      <div className={s.data__title}>{c.t.pageTitle[PAGES.FOURTH]}</div>
       <div className={s.data}>
         <div className={s.data__items}>
           {c.t[PAGES.FOURTH].map((i, index) => (

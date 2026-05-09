@@ -18,16 +18,17 @@
     width: fit-content;
     color: $BASE_LIGHT;
     font-size: $FZ_16;
-    font-weight: $FW_300;
+    font-weight: $FW_600;
     line-height: 20px;
     box-sizing: border-box;
     min-height: 25px;
     height: fit-content;
-    border: 1px solid green;
   }
   &__description {
     width: 100%;
     height: auto;
+    font-size: $FZ_14;
+    font-weight: $FW_300;
     flex: 1;
     overflow: hidden;
   }

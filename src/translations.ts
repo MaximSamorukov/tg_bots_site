@@ -13,22 +13,22 @@ export const t = {
       [PAGES.FIRST]: { title: "Main", subtitle: "Main", moto: "Main" },
       [PAGES.SECOND]: {
         title: "Benefits",
-        subtitle: "Benefits",
+        subtitle: "What can your bot do:",
         moto: "Benefits",
       },
       [PAGES.THIRD]: {
         title: "Development steps",
-        subtitle: "Development steps",
+        subtitle: "Optimal sequence for the best result",
         moto: "Development steps",
       },
       [PAGES.FOURTH]: {
         title: "Cases",
-        subtitle: "Cases",
+        subtitle: "Examples of developed bots",
         moto: "Cases",
       },
       [PAGES.FIFTH]: {
         title: "Contacts",
-        subtitle: "Contacts",
+        subtitle: "Use the feedback form, email or write to Telegram",
         moto: "Contacts",
       },
     },
@@ -87,7 +87,7 @@ export const t = {
         title: "Техподдержка и FAQ",
         type: "Поддержка",
         description:
-          "ЧОтвечает на типовые вопросы по базе знаний. Переводит на оператора только сложные случаи.",
+          "Отвечает на типовые вопросы по базе знаний. Переводит на оператора только сложные случаи.",
       },
       {
         active: true,
@@ -133,8 +133,9 @@ export const t = {
         active: true,
         type: "project",
         name: "shop_bot",
-        title: "Telegram бот магазин",
-        description: "Telegram бот магазин",
+        title: "Telegram bot for a digital goods store",
+        description:
+          "The bot displays a catalog of digital goods, processes payments, automatically delivers links or keys after purchase, and maintains order history in a personal account.",
         github: null,
         deploy: null,
         image: "",
@@ -143,8 +144,9 @@ export const t = {
         active: true,
         type: "project",
         name: "pay_bot",
-        title: "Telegram бот оплаты постов в канале",
-        description: "Telegram бот оплаты постов в канале",
+        title: "Telegram bot for paying for posts in a channel",
+        description:
+          "The bot grants access to paid channel posts after payment. It supports subscriptions, one-time payments, user status verification, and automatic renewal.",
         github: null,
         deploy: null,
         image: "",
@@ -152,9 +154,10 @@ export const t = {
       {
         active: true,
         type: "project",
-        name: "promouter_bot",
-        title: "Telegram бот продающий услуги",
-        description: "Telegram бот оплаты постов в канале",
+        name: "cleaning_bot",
+        title: "Telegram bot for selling cleaning services",
+        description:
+          "The bot offers a catalog of cleaning services, cost calculation, online booking, and payment. The user selects a date, cleaning type, and receives a reminder before the visit.",
         github: null,
         deploy: null,
         image: "",
@@ -162,9 +165,10 @@ export const t = {
       {
         active: true,
         type: "project",
-        name: "shop_bot_1",
-        title: "Telegram бот магазин_1",
-        description: "Telegram бот магазин",
+        name: "activity_bot",
+        title: " Telegram bot for monitoring activity in a group",
+        description:
+          "The bot tracks member activity: messages, reactions, and time in the group. It generates reports, identifies inactive users, and sends admin alerts for suspicious behavior or rule violations.",
         github: null,
         deploy: null,
         image: "",
@@ -172,9 +176,10 @@ export const t = {
       {
         active: true,
         type: "project",
-        name: "pay_bot_2",
-        title: "Telegram бот оплаты постов в канале_2",
-        description: "Telegram бот оплаты постов в канале",
+        name: "crowd_funding_bot",
+        title: "Telegram bot for crowdfunding",
+        description:
+          "The bot helps raise funds for projects. Users browse campaigns, make donations, and view collection progress. The admin automatically receives reports on payments and donors.",
         github: null,
         deploy: null,
         image: "",
@@ -182,9 +187,10 @@ export const t = {
       {
         active: true,
         type: "project",
-        name: "promouter_bot_3",
-        title: "Telegram бот продающий услуги_3",
-        description: "Telegram бот оплаты постов в канале",
+        name: "beauty_salon_bot",
+        title: "Telegram bot for booking appointments at a beauty salon",
+        description:
+          "The bot displays services, masters, and available time. The client selects a date, books an appointment, and receives reminders. The admin views all bookings in a handy calendar.",
         github: null,
         deploy: null,
         image: "",
@@ -224,22 +230,23 @@ export const t = {
       [PAGES.FIRST]: { title: "Главная", subtitle: "Main", moto: "Main" },
       [PAGES.SECOND]: {
         title: "Преимущества",
-        subtitle: "Benefits",
+        subtitle: "Что умеет ваш бот:",
         moto: "Benefits",
       },
       [PAGES.THIRD]: {
         title: "Процесс разработки",
-        subtitle: "Development steps",
+        subtitle: "Оптимальная последовательность для лучшего результата",
         moto: "Development steps",
       },
       [PAGES.FOURTH]: {
         title: "Решения",
-        subtitle: "Cases",
+        subtitle: "Примеры разработанных ботов",
         moto: "Cases",
       },
       [PAGES.FIFTH]: {
         title: "Контакты",
-        subtitle: "Contacts",
+        subtitle:
+          "Используйте форму обратной связи, эл. почту или напишите в Телеграм",
         moto: "Contacts",
       },
     },
@@ -298,7 +305,7 @@ export const t = {
         title: "Техподдержка и FAQ",
         type: "Поддержка",
         description:
-          "ЧОтвечает на типовые вопросы по базе знаний. Переводит на оператора только сложные случаи.",
+          "Отвечает на типовые вопросы по базе знаний. Переводит на оператора только сложные случаи.",
       },
       {
         active: true,
@@ -344,8 +351,9 @@ export const t = {
         active: true,
         type: "project",
         name: "shop_bot",
-        title: "Telegram бот магазин",
-        description: "Telegram бот магазин",
+        title: "Telegram бот магазин цифровых товаров",
+        description:
+          "Бот показывает каталог цифровых товаров, принимает оплату, автоматически выдаёт ссылки или ключи после покупки и ведёт историю заказов в личном кабинете.",
         github: null,
         deploy: null,
         image: "",
@@ -355,7 +363,8 @@ export const t = {
         type: "project",
         name: "pay_bot",
         title: "Telegram бот оплаты постов в канале",
-        description: "Telegram бот оплаты постов в канале",
+        description:
+          "Бот открывает доступ к закрытым постам в канале после оплаты. Поддерживает подписки, разовые платежи, проверку статуса пользователя и автоматическое продление.",
         github: null,
         deploy: null,
         image: "",
@@ -363,9 +372,10 @@ export const t = {
       {
         active: true,
         type: "project",
-        name: "promouter_bot",
-        title: "Telegram бот продающий услуги",
-        description: "Telegram бот оплаты постов в канале",
+        name: "cleaning_bot",
+        title: "Telegram бот для продажи услуг клининга",
+        description:
+          "Бот предлагает каталог услуг клининга, расчёт стоимости, онлайн-запись и оплату. Пользователь выбирает дату, уборку и получает напоминание о визите клинера.",
         github: null,
         deploy: null,
         image: "",
@@ -373,9 +383,10 @@ export const t = {
       {
         active: true,
         type: "project",
-        name: "shop_bot_1",
-        title: "Telegram бот магазин_1",
-        description: "Telegram бот магазин",
+        name: "activity_bot",
+        title: "Telegram бот для мониторинга активности в группе",
+        description:
+          "Бот отслеживает активность участников: сообщения, реакции, время в группе. Генерирует отчёты, выявляет неактивных пользователей и отправляет уведомления администратору при подозрительном поведении.",
         github: null,
         deploy: null,
         image: "",
@@ -383,9 +394,10 @@ export const t = {
       {
         active: true,
         type: "project",
-        name: "pay_bot_2",
-        title: "Telegram бот оплаты постов в канале_2",
-        description: "Telegram бот оплаты постов в канале",
+        name: "crowd_funding_bot",
+        title: "Telegram бот для краудфандинга",
+        description:
+          "Бот помогает собирать средства на проекты. Пользователи просматривают кампании, делают пожертвования, видят прогресс сбора. Администратор получает отчёты о платежах и донатерах автоматически.",
         github: null,
         deploy: null,
         image: "",
@@ -393,9 +405,10 @@ export const t = {
       {
         active: true,
         type: "project",
-        name: "promouter_bot_3",
-        title: "Telegram бот продающий услуги_3",
-        description: "Telegram бот оплаты постов в канале",
+        name: "beauty_salon_bot",
+        title: "Telegram бот для записи в салон красоты",
+        description:
+          "Бот показывает услуги, мастеров и свободное время. Клиент выбирает дату, записывается и получает напоминание. Администратор видит все записи в удобном календаре.",
         github: null,
         deploy: null,
         image: "",

@@ -10,8 +10,8 @@ export const useActiveSection = (ids: string[]) => {
     prevActiveIdRef.current = id;
     const el = document.getElementById(id);
     if (!el) return;
-    //const top = el.getBoundingClientRect().top + window.scrollY;
-    //window.scrollTo({ top, behavior: "smooth" });
+    const top = el.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top, behavior: "smooth" });
   }, []);
 
   const handleScroll = useCallback(() => {
