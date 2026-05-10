@@ -11,17 +11,21 @@ type ProjectItemProps = {
   deploy: string | null;
   image: string;
   index: number;
+  icon: string;
 };
 
 export const ProjectItem = ({
   index,
   title,
   description,
+  icon,
 }: ProjectItemProps) => {
   return (
     <ItemCard index={index}>
       <div className={s.item}>
-        <div className={s.item__image}>image</div>
+        <div className={s.item__image}>
+          <img src={icon} alt={title} />
+        </div>
         <div className={s.item__title}>{title}</div>
         <div className={s.item__description}>{description}</div>
         <FormButton label="Заказать" />

@@ -1,21 +1,17 @@
-import { memo } from "react";
-import resume from "@/assets/resume/Резюме_frontend_Саморуков.pdf";
+import { memo, useCallback } from "react";
 import s from "./style.module.scss";
-import { useTranslation } from "@/providers/translations";
-
+import { useActiveSection } from "@/utils/hooks/useActiveSection";
+import { PAGES } from "@/constants";
+const pages = Object.values(PAGES);
 type FormButtonPropsType = {
   label: string;
 };
 
 export const FormButton: React.FC<FormButtonPropsType> = memo(({ label }) => {
-  const c = useTranslation();
-
-  const onClick = () => {
-    const atag = document.createElement("a");
-    atag.href = resume;
-    atag.download = c.t.common.page.contacts.resumeName;
-    atag.click();
-  };
+  const { setActivePage } = useActiveSection(pages);
+  const onClick = useCallback(() => {
+    setActivePage(PAGES.FIFTH);
+  }, [setActivePage]);
   return (
     <div onClick={onClick} className={s.container}>
       {label}

@@ -4,7 +4,7 @@ export const t = {
   en: {
     pageTitle: {
       [PAGES.FIRST]: "Main",
-      [PAGES.SECOND]: "Benefits",
+      [PAGES.SECOND]: "Features",
       [PAGES.THIRD]: "Development steps",
       [PAGES.FOURTH]: "Cases",
       [PAGES.FIFTH]: "Contacts",
@@ -12,9 +12,9 @@ export const t = {
     itemTitle: {
       [PAGES.FIRST]: { title: "Main", subtitle: "Main", moto: "Main" },
       [PAGES.SECOND]: {
-        title: "Benefits",
+        title: "Features",
         subtitle: "What can your bot do:",
-        moto: "Benefits",
+        moto: "Features",
       },
       [PAGES.THIRD]: {
         title: "Development steps",
@@ -34,7 +34,7 @@ export const t = {
     },
     menu: {
       [PAGES.FIRST]: "Main",
-      [PAGES.SECOND]: "Benefits",
+      [PAGES.SECOND]: "Features",
       [PAGES.THIRD]: "Steps",
       [PAGES.FOURTH]: "Exapmples",
       [PAGES.FIFTH]: "Contacts",
@@ -238,7 +238,7 @@ export const t = {
   ru: {
     pageTitle: {
       [PAGES.FIRST]: "Главная",
-      [PAGES.SECOND]: "Преимущества",
+      [PAGES.SECOND]: "Возможности",
       [PAGES.THIRD]: "Процесс разработки",
       [PAGES.FOURTH]: "Решения",
       [PAGES.FIFTH]: "Контакты",
@@ -246,9 +246,9 @@ export const t = {
     itemTitle: {
       [PAGES.FIRST]: { title: "Главная", subtitle: "Main", moto: "Main" },
       [PAGES.SECOND]: {
-        title: "Преимущества",
+        title: "Возможности",
         subtitle: "Что умеет ваш бот:",
-        moto: "Benefits",
+        moto: "Features",
       },
       [PAGES.THIRD]: {
         title: "Процесс разработки",
@@ -269,7 +269,7 @@ export const t = {
     },
     menu: {
       [PAGES.FIRST]: "Главная",
-      [PAGES.SECOND]: "Преимущества",
+      [PAGES.SECOND]: "Возможности",
       [PAGES.THIRD]: "Этапы разработки",
       [PAGES.FOURTH]: "Решения",
       [PAGES.FIFTH]: "Контакты",

@@ -13,7 +13,7 @@ export const Contacts = () => {
         className={s.data}
         initial={{ filter: "blur(10px)" }}
         whileInView={{ filter: "none" }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0 }}
       >
         <Title item={PAGES.FIFTH} />
         <div className={s.data__contacts}>

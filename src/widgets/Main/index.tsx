@@ -19,7 +19,7 @@ export const Main = () => {
         <motion.div
           initial={{ filter: "blur(10px)" }}
           animate={{ filter: "none" }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0 }}
           className={s.data}
         >
           <div className={s.data__main}>
@@ -46,7 +46,7 @@ export const Main = () => {
       <motion.div
         initial={{ filter: "blur(10px)" }}
         whileInView={{ filter: "none" }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0 }}
         className={s.data}
       >
         <div className={s.data__main}>
