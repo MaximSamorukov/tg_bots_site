@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     react(),
     svgr(),
-    Sitemap({ hostname: "https://tg-bots-site-6uey.vercel.app" }),
+    Sitemap({ hostname: "https://tg-bots-site.vercel.app" }),
   ],
   resolve: {
     alias: {
