@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { useTranslation } from "@/providers/translations";
-import resume from "@/assets/resume/Резюме_frontend_Саморуков.pdf";
 import s from "./style.module.scss";
 import { PAGES } from "@/constants";
 import { Title } from "@/components/Shared/Title";

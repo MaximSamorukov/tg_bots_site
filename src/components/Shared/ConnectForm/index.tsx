@@ -2,6 +2,10 @@ import React, { useCallback } from "react";
 import s from "./style.module.scss";
 import { InputItem } from "./InputItem";
 import { useTranslation } from "@/providers/translations";
+import {
+  sendNotificationOnRequest,
+  type NotificationData,
+} from "@/utils/checkIp";
 
 type ConnectFormPropsType = {
   translateKey: string;
@@ -16,7 +20,6 @@ export const ConnectForm: React.FC<ConnectFormPropsType> = ({
     // @ts-ignore
     form: { title, subtitle, question, contact, submit },
   } = l;
-
   const onSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -25,7 +28,7 @@ export const ConnectForm: React.FC<ConnectFormPropsType> = ({
       formObject[key] = value as string;
     });
 
-    console.log(formObject);
+    sendNotificationOnRequest(formObject as NotificationData);
     e.currentTarget.reset();
   }, []);
   return (

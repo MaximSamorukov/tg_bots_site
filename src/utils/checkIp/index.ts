@@ -14,6 +14,9 @@ const defaultResponse = {
   languages: null,
 };
 const SERVER_URL = "https://check-client-app.vercel.app/api/bots"; // "http://localhost:3000/api";
+const SERVER_URL_VISITOR = `${SERVER_URL}/visitor`;
+const SERVER_URL_NOTIFICATION = `${SERVER_URL}/notification`;
+
 export const checkClientData = async (): Promise<Response> => {
   if (import.meta.env.DEV) {
     return Promise.resolve(defaultResponse);
@@ -23,7 +26,7 @@ export const checkClientData = async (): Promise<Response> => {
       .then((d) => d.json())
       .then((data) => {
         const { ip, city, country_name, languages } = data;
-        fetch(SERVER_URL, {
+        fetch(SERVER_URL_VISITOR, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ip, city, country_name, languages }),
@@ -46,5 +49,29 @@ export const checkClientData = async (): Promise<Response> => {
       }).catch(console.error);
     }
     return errorObject;
+  }
+};
+
+export type NotificationData = {
+  question: string;
+  contact: string;
+};
+export const sendNotificationOnRequest = async (
+  data: NotificationData,
+): Promise<boolean> => {
+  if (import.meta.env.DEV) {
+    return Promise.resolve(false);
+  }
+  const { question, contact } = data;
+  try {
+    fetch(SERVER_URL_NOTIFICATION, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question, contact }),
+    }).catch(console.error);
+
+    return true;
+  } catch {
+    return false;
   }
 };
