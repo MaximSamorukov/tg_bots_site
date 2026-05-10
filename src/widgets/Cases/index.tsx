@@ -1,7 +1,6 @@
 import { useTranslation } from "@/providers/translations";
 import s from "./style.module.scss";
 import { PAGES } from "@/constants";
-import { useMemo } from "react";
 import { ProjectItem } from "@/components/Cases/ProjectItem";
 import { Title } from "@/components/Shared/Title";
 
@@ -17,12 +16,6 @@ export type ProjectItemType = {
 };
 
 export type DataType = Record<ProjectType, ProjectItemType[]>;
-
-const init = {
-  project: [],
-  widget: [],
-  testTask: [],
-} as DataType;
 
 export const Cases = () => {
   const c = useTranslation();

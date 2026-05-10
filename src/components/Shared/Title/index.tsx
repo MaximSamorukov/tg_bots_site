@@ -1,5 +1,4 @@
 import { useTranslation } from "@/providers/translations";
-import cn from "classnames";
 import s from "./style.module.scss";
 import type { PAGES } from "@/constants";
 

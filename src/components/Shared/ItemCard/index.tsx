@@ -6,7 +6,7 @@ type ItemCardProps = {
   children: React.ReactNode;
   index: number;
 };
-export const ItemCard: React.FC<ItemCardProps> = ({ children, index }) => {
+export const ItemCard: React.FC<ItemCardProps> = ({ children }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
