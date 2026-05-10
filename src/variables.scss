@@ -44,6 +44,7 @@ $themes: (
 $BASE_LIGHT: map.get(map.get($themes, light), text-hovered);
 $BASE_GREY: map.get(map.get($themes, light), text-color);
 $BASE_ACCENT: map.get(map.get($themes, light), accent-color);
+$BASE_ACCENT_HOVER: map.get(map.get($themes, light), accent-color-hover);
 
 $BASE_BACKGROUND: map.get(map.get($themes, light), bg-color_1);
 $BASE_BACKGROUND_OPTION: map.get(map.get($themes, light), bg-color_2);

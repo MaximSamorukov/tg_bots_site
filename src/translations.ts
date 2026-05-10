@@ -204,6 +204,23 @@ export const t = {
       email: "maxim.samorukov@gmail.com",
       phone: "+7(925)026 17 37",
       tel: "tel:+79250261737",
+      form: {
+        title: "Ask a question",
+        subtitle:
+          "Write your question or provide a brief description of the task. I will respond within an hour.",
+        question: {
+          placeholder:
+            "For example: I need a Telegram bot to monitor task completion...",
+          label: "A question or a task",
+        },
+        contact: {
+          placeholder: "@username или телефон",
+          label: "Contact",
+        },
+        submit: {
+          label: "Submit request",
+        },
+      },
     },
     common: {
       page: {
@@ -422,6 +439,23 @@ export const t = {
       email: "maxim.samorukov@gmail.com",
       phone: "+7(925)026 17 37",
       tel: "tel:+79250261737",
+      form: {
+        title: "Задать вопрос",
+        subtitle:
+          "Напишите вопрос или направьте краткое описание задачи. Отвечу в течение часа.",
+        question: {
+          placeholder:
+            "Например: нужен телеграм бот для контроля выполнения работ...",
+          label: "Вопрос или задача",
+        },
+        contact: {
+          placeholder: "@username или телефон",
+          label: "Контакт для связи",
+        },
+        submit: {
+          label: "Отправить",
+        },
+      },
     },
     common: {
       page: {
