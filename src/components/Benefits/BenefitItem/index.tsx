@@ -1,5 +1,4 @@
 import { useMediaQuery } from "@uidotdev/usehooks";
-import M from "@/assets/benefits/ai.png";
 import s from "./style.module.scss";
 import { ItemCard } from "@/components/Shared/ItemCard";
 
