@@ -4,7 +4,7 @@ import { useMediaQuery } from "@uidotdev/usehooks";
 import { PAGES } from "@/constants";
 import { useTranslation } from "@/providers/translations";
 import { Title } from "@/components/Main/Title";
-import { Point } from "@/components/Main/Point";
+import { Point, type ComplexPointType } from "@/components/Main/Point";
 import { FormButton } from "@/components/Main/FormButton";
 
 import s from "./style.module.scss";
@@ -27,7 +27,10 @@ export const Main = () => {
               first={c.t[PAGES.FIRST].main.title.first}
               second={c.t[PAGES.FIRST].main.title.second}
             />
-            {c.t[PAGES.FIRST].main.points.map((point) => (
+            {(
+              c.t[PAGES.FIRST].main
+                .complexPoints as unknown as ComplexPointType[]
+            ).map((point) => (
               <Point point={point} />
             ))}
             <FormButton label="Обсудить проект" />
@@ -54,9 +57,14 @@ export const Main = () => {
             first={c.t[PAGES.FIRST].main.title.first}
             second={c.t[PAGES.FIRST].main.title.second}
           />
-          {c.t[PAGES.FIRST].main.points.map((point) => (
-            <Point point={point} />
-          ))}
+          <div className={s.data__options}>
+            {(
+              c.t[PAGES.FIRST].main
+                .complexPoints as unknown as ComplexPointType[]
+            ).map((point) => (
+              <Point point={point} />
+            ))}
+          </div>
           <FormButton label="Обсудить проект" />
         </div>
         <div className={s.data__image}>

@@ -54,7 +54,7 @@ export const t = {
         ],
         complexPoints: [
           {
-            type: "Platforms",
+            type: "Platforms:",
             options: [
               {
                 option: ["Telegram", "VK", "Avito"],
@@ -62,7 +62,7 @@ export const t = {
             ],
           },
           {
-            type: "Integrations",
+            type: "Integrations:",
             options: [
               {
                 option: [
@@ -78,13 +78,24 @@ export const t = {
             ],
           },
           {
-            type: "Conditions",
+            type: "Conditions:",
             options: [
               {
                 option: ["development time: from 7 days"],
               },
               {
                 option: ["price: from 10,000 ₽"],
+              },
+            ],
+          },
+          {
+            type: "Contacts:",
+            options: [
+              {
+                option: ["Telegram: @M_Camopykoff"],
+              },
+              {
+                option: ["Email: maxim.samorukov@gmail.com"],
               },
             ],
           },
@@ -366,7 +377,7 @@ export const t = {
         ],
         complexPoints: [
           {
-            type: "Платформы",
+            type: "Платформы:",
             options: [
               {
                 option: ["Telegram", "VK", "Avito"],
@@ -374,7 +385,7 @@ export const t = {
             ],
           },
           {
-            type: "Интеграции",
+            type: "Интеграции:",
             options: [
               {
                 option: [
@@ -390,13 +401,24 @@ export const t = {
             ],
           },
           {
-            type: "Условия",
+            type: "Условия:",
             options: [
               {
                 option: ["срок изготовления от 7 дней"],
               },
               {
                 option: ["стоимость от 10,000 ₽"],
+              },
+            ],
+          },
+          {
+            type: "Контакты:",
+            options: [
+              {
+                option: ["Telegram: @M_Camopykoff"],
+              },
+              {
+                option: ["Email: maxim.samorukov@gmail.com"],
               },
             ],
           },
