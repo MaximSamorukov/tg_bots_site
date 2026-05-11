@@ -1,7 +1,23 @@
 @use "../../../variables.scss" as *;
 
-.container {
+.c {
   width: fit-content;
   height: fit-content;
-  font-size: $FZ_22;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &__mainStep {
+    font-size: $FZ_22;
+    font-weight: $FW_600;
+    color: $BASE_ACCENT;
+  }
+
+  &__subStep {
+    font-size: $FZ_16;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-weight: $FW_300;
+  }
 }

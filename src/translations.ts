@@ -113,19 +113,59 @@ export const t = {
     ],
     [PAGES.THIRD]: [
       {
-        step: "Defining goals and objectives",
+        step: "Defining Goals and Objectives",
+        substeps: [
+          {
+            step: "You outline the goal and objective, which we then clarify and refine.",
+          },
+        ],
       },
       {
-        step: "Developing and agreeing on technical requirements, timelines, and costs",
+        step: "Development and Approval of Requirements, Timeline, and Cost",
+        substeps: [
+          {
+            step: "I draft the technical requirements, create a project timeline, and determine the cost.",
+          },
+          {
+            step: "After agreeing on the scope of work, timeline, and cost, we finalize the requirements and you make a 30% advance payment. The remaining balance is due after the demo, before deployment to the server.",
+          },
+        ],
       },
       {
-        step: "Development and testing",
+        step: "Development and Testing",
+        substeps: [
+          {
+            step: "I develop the bot in accordance with the technical requirements and timeline.",
+          },
+          {
+            step: "I keep you updated on the progress. If necessary, I consult on technical questions.",
+          },
+        ],
       },
       {
-        step: "Acceptance testing",
+        step: "Acceptance Testing",
+        substeps: [
+          {
+            step: "Once the bot is ready, I conduct a demo.",
+          },
+          {
+            step: "Based on the demo results and, if necessary, I make revisions.",
+          },
+          {
+            step: "You make the final payment.",
+          },
+        ],
       },
       {
-        step: "Deployment and support",
+        step: "Deployment and Support",
+        substeps: [
+          {
+            step: "Deployment to your server or mine.",
+          },
+          {
+            step: "Transfer of the codebase and documentation.",
+          },
+        ],
       },
     ],
     [PAGES.FOURTH]: [
@@ -349,18 +389,58 @@ export const t = {
     [PAGES.THIRD]: [
       {
         step: "Определение целей и задач",
+        substeps: [
+          {
+            step: "Вы обозначаете цель и задачу, которую мы конкретизируем и уточняем.",
+          },
+        ],
       },
       {
         step: "Разработка и согласование ТЗ, сроков и стоимости",
+        substeps: [
+          {
+            step: "Я разрабатываю техническое задание, календарный план и определяю стоимость.",
+          },
+          {
+            step: "После согласования объема работ, сроков и стоимости фиксируем ТЗ, вы вносите аванс 30%. Остаток - после демо, перед делоем на сервер.",
+          },
+        ],
       },
       {
         step: "Разработка и тестирование",
+        substeps: [
+          {
+            step: "Разрабатываю бота в соответствии с техническим заданием и сроками.",
+          },
+          {
+            step: "Держу в курсе хода работ. При необходимости согласовываю технические вопросы.",
+          },
+        ],
       },
       {
-        step: "Приемо-сдаточные испытания",
+        step: "Приёмо-сдаточные испытания",
+        substeps: [
+          {
+            step: "По факту готовности бота, провожу демо.",
+          },
+          {
+            step: "По результатам демо, при необходимости, вношу правки.",
+          },
+          {
+            step: "Вы производите оплату.",
+          },
+        ],
       },
       {
         step: "Деплой и поддержка",
+        substeps: [
+          {
+            step: "Деплой на ваш или на мой сервер.",
+          },
+          {
+            step: "Передача кодовой базы и документации.",
+          },
+        ],
       },
     ],
     [PAGES.FOURTH]: [
