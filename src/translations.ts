@@ -55,6 +55,7 @@ export const t = {
         complexPoints: [
           {
             type: "Platforms:",
+            id: "platforms",
             options: [
               {
                 option: ["Telegram", "VK", "Avito"],
@@ -63,6 +64,7 @@ export const t = {
           },
           {
             type: "Integrations:",
+            id: "integrations",
             options: [
               {
                 option: [
@@ -79,6 +81,7 @@ export const t = {
           },
           {
             type: "Conditions:",
+            id: "conditions",
             options: [
               {
                 option: ["development time: from 7 days"],
@@ -90,6 +93,7 @@ export const t = {
           },
           {
             type: "Contacts:",
+            id: "contacts",
             options: [
               {
                 option: ["Telegram: @M_Camopykoff"],
@@ -378,6 +382,7 @@ export const t = {
         complexPoints: [
           {
             type: "Платформы:",
+            id: "platforms",
             options: [
               {
                 option: ["Telegram", "VK", "Avito"],
@@ -386,6 +391,7 @@ export const t = {
           },
           {
             type: "Интеграции:",
+            id: "integrations",
             options: [
               {
                 option: [
@@ -402,6 +408,7 @@ export const t = {
           },
           {
             type: "Условия:",
+            id: "conditions",
             options: [
               {
                 option: ["срок изготовления от 7 дней"],
@@ -413,6 +420,7 @@ export const t = {
           },
           {
             type: "Контакты:",
+            id: "contacts",
             options: [
               {
                 option: ["Telegram: @M_Camopykoff"],
