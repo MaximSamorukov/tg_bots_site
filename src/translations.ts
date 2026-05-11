@@ -52,6 +52,43 @@ export const t = {
           "Launch in as little as 3 days",
           "Starting from 200 USD",
         ],
+        complexPoints: [
+          {
+            type: "Platforms",
+            options: [
+              {
+                option: ["Telegram", "VK", "Avito"],
+              },
+            ],
+          },
+          {
+            type: "Integrations",
+            options: [
+              {
+                option: [
+                  "CRM",
+                  "payment systems",
+                  "Google",
+                  "email",
+                  "e-commerce",
+                  "AI",
+                  "RAG",
+                ],
+              },
+            ],
+          },
+          {
+            type: "Conditions",
+            options: [
+              {
+                option: ["development time: from 7 days"],
+              },
+              {
+                option: ["price: from 10,000 rub."],
+              },
+            ],
+          },
+        ],
       },
       brief: {
         name: "Maksim Samorukov",
@@ -326,6 +363,43 @@ export const t = {
           "Подключение сервисов оплаты",
           "Запуск от 3 дней",
           "Стоимость от 10000 ₽",
+        ],
+        complexPoints: [
+          {
+            type: "Платформы",
+            options: [
+              {
+                option: ["Telegram", "VK", "Avito"],
+              },
+            ],
+          },
+          {
+            type: "Интеграции",
+            options: [
+              {
+                option: [
+                  "CRM",
+                  "платежные системы",
+                  "Google",
+                  "эл.почта",
+                  "сайт/интернет магазин",
+                  "AI",
+                  "RAG",
+                ],
+              },
+            ],
+          },
+          {
+            type: "Условия",
+            options: [
+              {
+                option: ["срок изготовления от 7 дней"],
+              },
+              {
+                option: ["стоимость от 10,000 рублей"],
+              },
+            ],
+          },
         ],
       },
       brief: {
