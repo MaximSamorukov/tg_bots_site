@@ -84,7 +84,7 @@ export const t = {
                 option: ["development time: from 7 days"],
               },
               {
-                option: ["price: from 10,000 rub."],
+                option: ["price: from 10,000 ₽"],
               },
             ],
           },
@@ -396,7 +396,7 @@ export const t = {
                 option: ["срок изготовления от 7 дней"],
               },
               {
-                option: ["стоимость от 10,000 рублей"],
+                option: ["стоимость от 10,000 ₽"],
               },
             ],
           },
