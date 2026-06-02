@@ -12,6 +12,7 @@ type ProjectItemProps = {
   image: string;
   index: number;
   icon: string;
+  onModalOpen: () => void;
 };
 
 export const ProjectItem = ({
@@ -19,6 +20,7 @@ export const ProjectItem = ({
   title,
   description,
   icon,
+  onModalOpen,
 }: ProjectItemProps) => {
   return (
     <ItemCard index={index}>
@@ -28,7 +30,7 @@ export const ProjectItem = ({
         </div>
         <div className={s.item__title}>{title}</div>
         <div className={s.item__description}>{description}</div>
-        <FormButton label="Заказать" />
+        <FormButton label="Заказать" onModalOpen={onModalOpen} />
       </div>
     </ItemCard>
   );
