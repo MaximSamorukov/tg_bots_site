@@ -1,6 +1,8 @@
 import s from "./style.module.scss";
 import { ItemCard } from "@/components/Shared/ItemCard";
 import { FormButton } from "../FormButton";
+import type { ITGBot } from "@/types";
+import { useCallback } from "react";
 
 type ProjectItemProps = {
   type: string;
@@ -12,7 +14,8 @@ type ProjectItemProps = {
   image: string;
   index: number;
   icon: string;
-  onModalOpen: () => void;
+  onModalOpen: (arg: ITGBot) => void;
+  item: ITGBot;
 };
 
 export const ProjectItem = ({
@@ -21,7 +24,11 @@ export const ProjectItem = ({
   description,
   icon,
   onModalOpen,
+  item,
 }: ProjectItemProps) => {
+  const onOpenModal = useCallback(() => {
+    onModalOpen(item);
+  }, [item, onModalOpen]);
   return (
     <ItemCard index={index}>
       <div className={s.item}>
@@ -30,7 +37,7 @@ export const ProjectItem = ({
         </div>
         <div className={s.item__title}>{title}</div>
         <div className={s.item__description}>{description}</div>
-        <FormButton label="Заказать" onModalOpen={onModalOpen} />
+        <FormButton label="Заказать" onModalOpen={onOpenModal} />
       </div>
     </ItemCard>
   );

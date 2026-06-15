@@ -11,6 +11,8 @@ import cleaning_bot from "@/assets/cases/cleaning_bot.png";
 import crowd_funding_bot from "@/assets/cases/crowd_funding_bot.png";
 import beauty_salon_bot from "@/assets/cases/beauty_salon_bot.png";
 import { Modal } from "@/components/Cases/Modal";
+import type { ITGBot } from "@/types";
+import { ModalInfoField } from "@/components/Cases/ModalInfoField";
 type ProjectType = "project" | "widget" | "testTask";
 
 export type ProjectItemType = {
@@ -35,9 +37,11 @@ export const icons = {
 
 export const Cases = () => {
   const [opened, setOpened] = useState<boolean>(false);
+  const [currentModalItem, setCurrentModalItem] = useState<ITGBot>();
   const c = useTranslation();
 
-  const onClick = useCallback(() => {
+  const onClick = useCallback((data: ITGBot) => {
+    setCurrentModalItem(data);
     setOpened((prev) => {
       if (prev) {
         return false;
@@ -56,6 +60,7 @@ export const Cases = () => {
           <div className={s.data__items}>
             {c.t[PAGES.FOURTH].map((i, index) => (
               <ProjectItem
+                item={i as unknown as ITGBot}
                 onModalOpen={onClick}
                 icon={icons[i.name]}
                 index={index}
@@ -73,7 +78,29 @@ export const Cases = () => {
         </div>
       </div>
       <Modal isOpened={opened} onCloseModal={closeModal}>
-        <div style={{ width: 300, height: 300 }}>dffdfdfdf</div>
+        <div style={{ width: "100%", height: "100%", border: "1px solid red" }}>
+          <ModalInfoField type="title" data={currentModalItem?.fullData!} />
+          <ModalInfoField type="paragraph" data={currentModalItem?.fullData!} />
+          <ModalInfoField type="images" data={currentModalItem?.fullData!} />
+          <ModalInfoField
+            type="architecture"
+            data={currentModalItem?.fullData!}
+          />
+          <ModalInfoField type="stack" data={currentModalItem?.fullData!} />
+          <ModalInfoField
+            type="requirements"
+            data={currentModalItem?.fullData!}
+          />
+          <ModalInfoField
+            type="conditions"
+            data={currentModalItem?.fullData!}
+          />
+          <ModalInfoField type="request" data={currentModalItem?.fullData!} />
+          <ModalInfoField
+            type="download_docs"
+            data={currentModalItem?.fullData!}
+          />
+        </div>
       </Modal>
     </>
   );
