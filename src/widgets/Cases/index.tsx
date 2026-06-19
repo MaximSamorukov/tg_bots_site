@@ -78,7 +78,7 @@ export const Cases = () => {
         </div>
       </div>
       <Modal isOpened={opened} onCloseModal={closeModal}>
-        <div style={{ width: "100%", height: "100%", border: "1px solid red" }}>
+        <div className={s.modalDataContainer}>
           <ModalInfoField type="title" data={currentModalItem?.fullData!} />
           <ModalInfoField type="paragraph" data={currentModalItem?.fullData!} />
           <ModalInfoField type="images" data={currentModalItem?.fullData!} />

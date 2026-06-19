@@ -24,6 +24,8 @@ interface Requirements {
   OS: string;
   RAM: string;
   SSD: string;
+  concurrency: string;
+  peak_rpc: string;
 }
 
 interface Condition {

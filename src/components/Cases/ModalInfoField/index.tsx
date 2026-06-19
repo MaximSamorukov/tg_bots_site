@@ -1,6 +1,6 @@
 import type { ITGBot } from "@/types";
 import React from "react";
-
+import s from "./style.module.scss";
 type ModalInfoFieldPropsType = {
   type:
     | "paragraph"
@@ -38,19 +38,22 @@ export const ModalInfoField: React.FC<ModalInfoFieldPropsType> = ({
     case "paragraph":
       return (
         <div className="modal-info-field paragraph">
+          <h3>Описание</h3>
           <p>{data.description}</p>
         </div>
       );
 
     case "stack":
       return (
-        <div className="modal-info-field stack">
-          <h3>Технологический стек</h3>
-          <ul>
+        <div className={s.stackContainer}>
+          <div className={s.stackContainer__header}>
+            <h3>Технологический стек</h3>
+          </div>
+          <div className={s.stackContainer__items}>
             {data.stack.map((tech, index) => (
-              <li key={index}>{tech}</li>
+              <div key={index}>{tech}</div>
             ))}
-          </ul>
+          </div>
         </div>
       );
 
@@ -62,6 +65,10 @@ export const ModalInfoField: React.FC<ModalInfoFieldPropsType> = ({
             <li>OS: {data.requirements.OS}</li>
             <li>RAM: {data.requirements.RAM}</li>
             <li>SSD: {data.requirements.SSD}</li>
+            <li>Пиковая нагрузка: {data.requirements.peak_rpc}</li>
+            <li>
+              Максимальное кол-во пользователей: {data.requirements.concurrency}
+            </li>
           </ul>
         </div>
       );
@@ -98,17 +105,25 @@ export const ModalInfoField: React.FC<ModalInfoFieldPropsType> = ({
 
     case "images":
       return (
-        <div className="modal-info-field images">
-          <h3>Изображения</h3>
-          {data.images.length > 0 ? (
-            <div className="images-grid">
-              {data.images.map((image, index) => (
-                <img key={index} src={image} alt={`Изображение ${index + 1}`} />
-              ))}
-            </div>
-          ) : (
-            <p>Нет изображений</p>
-          )}
+        <div className={s.imagesContainer}>
+          <div className={s.imagesContainer__header}>
+            <h3>Изображения</h3>
+          </div>
+          <div className={s.imagesContainer__images}>
+            {data.images.length > 0 ? (
+              <>
+                {data.images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`Изображение ${index + 1}`}
+                  />
+                ))}
+              </>
+            ) : (
+              <p>Нет изображений</p>
+            )}
+          </div>
         </div>
       );
 
