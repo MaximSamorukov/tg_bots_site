@@ -25,6 +25,7 @@ export const Modal: React.FC<ModalPropsType> = ({
     [s.container__opened]: isOpened,
     [s.container__closed]: !isOpened,
   });
+
   return createPortal(
     <div id="layer" onClick={onClose} className={cl}>
       {isOpened ? <div className={s.modalContainer}>{children}</div> : <></>}

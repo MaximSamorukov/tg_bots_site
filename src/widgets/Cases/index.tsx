@@ -96,10 +96,6 @@ export const Cases = () => {
             data={currentModalItem?.fullData!}
           />
           <ModalInfoField type="request" data={currentModalItem?.fullData!} />
-          <ModalInfoField
-            type="download_docs"
-            data={currentModalItem?.fullData!}
-          />
         </div>
       </Modal>
     </>
