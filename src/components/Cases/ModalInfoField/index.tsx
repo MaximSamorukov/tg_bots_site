@@ -1,6 +1,7 @@
 import type { ITGBot } from "@/types";
 import React from "react";
 import s from "./style.module.scss";
+import { FormButton } from "../FormButton";
 type ModalInfoFieldPropsType = {
   type:
     | "paragraph"
@@ -91,8 +92,19 @@ export const ModalInfoField: React.FC<ModalInfoFieldPropsType> = ({
 
     case "request":
       return (
-        <div className="modal-info-field request">
-          <h3>Заказать</h3>
+        <div className={s.requestContainer}>
+          <div className={s.requestContainer__titleContainer}>
+            <h3>Заказать</h3>
+          </div>
+          <div className={s.requestContainer__inputContainer}>
+            <input
+              className={s.requestContainer__input}
+              placeholder="телефон или email для связи"
+            />
+          </div>
+          <div className={s.requestContainer__buttonContainer}>
+            <FormButton label="Назначить консультацию" onModalOpen={() => {}} />
+          </div>
         </div>
       );
 
