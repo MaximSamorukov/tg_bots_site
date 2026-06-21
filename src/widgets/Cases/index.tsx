@@ -58,22 +58,24 @@ export const Cases = () => {
         <Title item={PAGES.FOURTH} />
         <div className={s.data}>
           <div className={s.data__items}>
-            {c.t[PAGES.FOURTH].map((i, index) => (
-              <ProjectItem
-                item={i as unknown as ITGBot}
-                onModalOpen={onClick}
-                icon={icons[i.name]}
-                index={index}
-                key={i.name}
-                title={i.title}
-                type={i.type}
-                description={i.description}
-                github={i.github}
-                deploy={i.deploy}
-                image={i.image}
-                name={i.name}
-              />
-            ))}
+            {c.t[PAGES.FOURTH]
+              .filter((i) => i.active)
+              .map((i, index) => (
+                <ProjectItem
+                  item={i as unknown as ITGBot}
+                  onModalOpen={onClick}
+                  icon={icons[i.name]}
+                  index={index}
+                  key={i.name}
+                  title={i.title}
+                  type={i.type}
+                  description={i.description}
+                  github={i.github}
+                  deploy={i.deploy}
+                  image={i.image}
+                  name={i.name}
+                />
+              ))}
           </div>
         </div>
       </div>
