@@ -1,6 +1,7 @@
 @use "../../../variables.scss" as *;
 
 .container {
+  all: unset;
   width: 100%;
   height: fit-content;
   padding: 8px 30px;
@@ -18,5 +19,14 @@
   &:hover {
     color: $BASE_LIGHT;
     border: 3px solid $BASE_LIGHT;
+  }
+  &__disabled {
+    cursor: not-allowed;
+    color: rgba($BASE_GREY, 0.3);
+    border: 3px solid rgba($BASE_GREY, 0.3);
+    &:hover {
+      color: rgba($BASE_GREY, 0.3);
+      border: 3px solid rgba($BASE_GREY, 0.3);
+    }
   }
 }

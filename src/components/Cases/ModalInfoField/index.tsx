@@ -48,7 +48,7 @@ export const ModalInfoField: React.FC<ModalInfoFieldPropsType> = ({
       return <ConditionsComponent conditions={data.conditions} />;
 
     case "request":
-      return <RequestComponent />;
+      return <RequestComponent botName={data.title} />;
 
     case "download_docs":
       return <DownloadDocsComponent />;

@@ -37,7 +37,7 @@ export const ProjectItem = ({
         </div>
         <div className={s.item__title}>{title}</div>
         <div className={s.item__description}>{description}</div>
-        <FormButton label="Заказать" onModalOpen={onOpenModal} />
+        <FormButton label="Подробнее" onModalOpen={onOpenModal} />
       </div>
     </ItemCard>
   );

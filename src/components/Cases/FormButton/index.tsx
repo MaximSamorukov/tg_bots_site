@@ -1,17 +1,23 @@
 import { memo } from "react";
+import cn from "classnames";
 import s from "./style.module.scss";
 
 type FormButtonPropsType = {
   label: string;
   onModalOpen: () => void;
+  disabled?: boolean;
 };
 
 export const FormButton: React.FC<FormButtonPropsType> = memo(
-  ({ label, onModalOpen }) => {
+  ({ label, onModalOpen, disabled }) => {
     return (
-      <div onClick={onModalOpen} className={s.container}>
+      <button
+        disabled={disabled}
+        onClick={onModalOpen}
+        className={cn(s.container, { [s.container__disabled]: disabled })}
+      >
         {label}
-      </div>
+      </button>
     );
   },
 );
