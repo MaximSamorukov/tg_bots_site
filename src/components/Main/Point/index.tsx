@@ -43,9 +43,13 @@ export const Point: React.FC<PointPropsType> = ({ point }) => {
     <div className={s.c}>
       <div className={s.c__type}>{type}</div>
       <div className={s.c__options}>
-        {options.map(({ option }) => {
+        {options.map(({ option }, i) => {
           const str = option.join(", ");
-          return <div className={s.c__option}>{str}</div>;
+          return (
+            <div key={i} className={s.c__option}>
+              {str}
+            </div>
+          );
         })}
       </div>
     </div>

@@ -30,8 +30,8 @@ export const Main = () => {
             {(
               c.t[PAGES.FIRST].main
                 .complexPoints as unknown as ComplexPointType[]
-            ).map((point) => (
-              <Point point={point} />
+            ).map((point, i) => (
+              <Point key={i} point={point} />
             ))}
             <FormButton label="Обсудить проект" />
           </div>
@@ -61,8 +61,8 @@ export const Main = () => {
             {(
               c.t[PAGES.FIRST].main
                 .complexPoints as unknown as ComplexPointType[]
-            ).map((point) => (
-              <Point point={point} />
+            ).map((point, i) => (
+              <Point key={i} point={point} />
             ))}
           </div>
           <FormButton label="Обсудить проект" />

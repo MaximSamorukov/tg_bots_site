@@ -7,19 +7,21 @@ type ModalPropsType = {
   children: React.ReactNode;
   isOpened: boolean;
   onCloseModal: () => void;
+  id: string;
 };
 export const Modal: React.FC<ModalPropsType> = ({
   children,
   isOpened,
   onCloseModal,
+  id,
 }) => {
   const onClose = useCallback(
     (e: MouseEvent<HTMLDivElement>) => {
-      if ((e.target as HTMLDivElement).id === "layer") {
+      if ((e.target as HTMLDivElement).id === id) {
         onCloseModal();
       }
     },
-    [onCloseModal],
+    [onCloseModal, id],
   );
   const cl = cn(s.container, {
     [s.container__opened]: isOpened,
@@ -27,7 +29,7 @@ export const Modal: React.FC<ModalPropsType> = ({
   });
 
   return createPortal(
-    <div id="layer" onClick={onClose} className={cl}>
+    <div id={id} onClick={onClose} className={cl}>
       {isOpened ? <div className={s.modalContainer}>{children}</div> : <></>}
     </div>,
     document.body,

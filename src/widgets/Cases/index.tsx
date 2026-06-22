@@ -79,7 +79,7 @@ export const Cases = () => {
           </div>
         </div>
       </div>
-      <Modal isOpened={opened} onCloseModal={closeModal}>
+      <Modal id="layer" isOpened={opened} onCloseModal={closeModal}>
         <div className={s.modalDataContainer}>
           <ModalInfoField type="title" data={currentModalItem?.fullData!} />
           <ModalInfoField type="paragraph" data={currentModalItem?.fullData!} />

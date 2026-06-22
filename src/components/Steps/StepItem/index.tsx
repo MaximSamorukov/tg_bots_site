@@ -15,7 +15,11 @@ export const StepItem = ({
       <div className={s.c__mainStep}>{mainStep}</div>
       {substeps.map(({ step }) => {
         const subStep = `- ${step}`;
-        return <div className={s.c__subStep}>{subStep}</div>;
+        return (
+          <div key={subStep} className={s.c__subStep}>
+            {subStep}
+          </div>
+        );
       })}
     </div>
   );
