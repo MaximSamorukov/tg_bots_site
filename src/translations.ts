@@ -364,6 +364,10 @@ export const t = {
             "beauty_salon_bot/i_4.png",
             "beauty_salon_bot/i_5.png",
             "beauty_salon_bot/i_6.png",
+            "beauty_salon_bot/i_7.png",
+            "beauty_salon_bot/i_8.png",
+            "beauty_salon_bot/i_9.png",
+            "beauty_salon_bot/i_10.png",
           ],
           requirements: {
             OS: "Ubuntu 20.04+ / Linux",
@@ -957,6 +961,10 @@ export const t = {
             "beauty_salon_bot/i_4.png",
             "beauty_salon_bot/i_5.png",
             "beauty_salon_bot/i_6.png",
+            "beauty_salon_bot/i_7.png",
+            "beauty_salon_bot/i_8.png",
+            "beauty_salon_bot/i_9.png",
+            "beauty_salon_bot/i_10.png",
           ],
           requirements: {
             OS: "Ubuntu 20.04+ / Linux",

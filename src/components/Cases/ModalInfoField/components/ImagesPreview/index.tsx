@@ -48,16 +48,23 @@ export const ImagesPreviewComponent: React.FC<ImagesPreviewComponentProps> = ({
       </div>
       <Modal id="preview" isOpened={showModal} onCloseModal={closeModal}>
         <div className={s.modalContainer}>
+          <div className={s.modal_imgContainer}>
+            <img
+              id={selectedImgPath}
+              key={selectedImgPath}
+              src={selectedImgPath}
+              alt={selectedImgPath}
+              loading="lazy"
+              style={{
+                width: "100%",
+                height: "auto",
+                objectFit: "cover",
+              }}
+            />
+          </div>
           <button onClick={closeModal} className={s.modal_closeButton}>
             Закрыть
           </button>
-          <img
-            id={selectedImgPath}
-            key={selectedImgPath}
-            src={selectedImgPath}
-            alt={selectedImgPath}
-            loading="lazy"
-          />
         </div>
       </Modal>
     </div>
